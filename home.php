@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<?php
+include ("php/login.php");
+?>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -57,20 +60,21 @@
               <span class="card-title">Member Login</span>
             </div>
             <div class="row">
-                <form class="col s12">
+                <form class="col s12" action="home.php" method="post">
                   <div class="row">
                     <div class="input-field col s12">
                       <i class="material-icons prefix">account_circle</i>
-                      <input id="icon_prefix" type="text" class="validate">
+                      <input id="icon_prefix" type="text" class="validate" name="user">
                       <label for="icon_prefix">User</label>
                     </div>
                     <div class="input-field col s12">
                       <i class="material-icons prefix">lock_outline </i>
-                      <input id="password" type="password" class="validate">
+                      <input id="password" type="password" class="validate" name="pass">
                       <label for="password">Password</label>
                     </div>
                   </div>
                   <div class="row">
+<!--
                     <div class="col s6">
                         <form action="#">
                             <p>
@@ -79,6 +83,7 @@
                             </p>
                         </form>
                     </div>
+-->
                     <div class="col s6">
                         <a href="#">Olvidé mi contraseña</a>
                     </div>
