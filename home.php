@@ -194,29 +194,45 @@ include ("php/login.php");
     <div class="container">
         <div class="row">
             <div  class="col s12">
-                <h2 class="center header text_h2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="span_h2"> Phasellus  </span>vestibulum lorem risus, nec suscipit lorem <span class="span_h2"> laoreet quis.</span </h2>
+                <h2 class="center header text_h2">Venturas es la plataforma para  <span class="span_h2"> emprendedores  </span>que te entiende y te <span class="span_h2">empodera</span> para construir tus proyectos. Tenemos una Ruta especializada para que desarrolles con claridad tus <span class="span_h2"> ideas de negocios.</span> </h2>
             </div>
 
-            <div  class="col s12 m4 l4">
+            <div  class="col s12 m3 l3">
                 <div class="center promo promo-example">
                     <i class="mdi-image-flash-on"></i>
-                    <h5 class="promo-caption">Speeds up development</h5>
-                    <p class="light center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                    <h5 class="promo-caption">Ser emprendedor es cosa de valientes</h5>
+                    <p class="light center"> Muchos sueñan hacerlo, pocos se lanzan a realizarlo. Es un sueño por el que se lucha día a día, y no es raro que ni tu familia ni tus amigos entiendan bien por lo que se pasa.
+</p>
                 </div>
             </div>
-            <div class="col s12 m4 l4">
+            <div class="col s12 m3 l3">
                 <div class="center promo promo-example">
                     <i class="mdi-social-group"></i>
-                    <h5 class="promo-caption">User Experience Focused</h5>
-                    <p class="light center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <h5 class="promo-caption">Plataforma para emprendedores</h5>
+                    <p class="light center">Mejor aún: para el estilo de vida de los emprendedores. Un sitio para informarse, para proyectarse, conectar ideas y oportunidades, incluso otros emprendedores y de paso, para entretenerse un poco.
+</p>
                 </div>
             </div>
-            <div class="col s12 m4 l4">
+            <div class="col s12 m3 l3">
                 <div class="center promo promo-example">
                     <i class="mdi-hardware-desktop-windows"></i>
-                    <h5 class="promo-caption">Fully responsive</h5>
-                    <p class="light center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    <h5 class="promo-caption">Más allá de los datos</h5>
+                    <p class="light center">Acá encuentras, más allá de los datos, noticias y ayudas sectorizadas, -sin duda, de gran importancia para tu labor-, una ruta de empresarismo ciudadosamente diseñada para desarrollar tus ideas de negocios, con guías y herramientas que te apoyan y mientras avanzas en el proceso.
+</p>
                 </div>
+            </div>
+            <div class="col s12 m3 l3">
+                <div class="center promo promo-example">
+                    <i class="mdi-hardware-desktop-windows"></i>
+                    <h5 class="promo-caption">!Divertido!</h5>
+                    <p class="light center">Paralelamente, podrás conocer las historias de personajes que viven experiencias propias de los emprendedores, allí muchas de las situaciones que has vivido estarán presentes, y otras que no, pero que tal vez te puedan resultar de utilidad, así sea para sonreír un rato.
+</p>
+                </div>
+            </div>
+            
+            <div  class="col s12">
+                <h4 class="center header text_h2">Si eres emprendedor, o estás a punto de comenzar, te invitamos a que conozcas Venturas y todo lo que tiene para tí.
+</h4>
             </div>
         </div>
     </div>
