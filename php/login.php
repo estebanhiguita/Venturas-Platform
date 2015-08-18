@@ -24,11 +24,12 @@ $numrows=mysqli_num_rows( $result );
 
 if ($row = mysqli_fetch_array($result) and $numrows >0){
 
-   do { 
+   do {
+       header('Location: /venturas-platform/pregunta1.php'); 
      echo  "<script> alert('Usuario y contraseña correctos'); </script> ";
    } while ($row = mysqli_fetch_array($result)); 
 
-} else { 
+} else {
 echo  "<script> alert('Usuario y contraseña incorrectos'); </script> ";
 }
 }

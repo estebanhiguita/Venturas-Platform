@@ -89,7 +89,7 @@ include ("php/login.php");
                     </div>
                   </div>
                     <div class="center-align">
-                        <button class="btn red white-text waves-effect waves-light" type="submit" name="action">Login
+                        <button class="btn red white-text waves-effect waves-light" type="submit" name="action" action="pregunta1.php">Login
                             <i class="material-icons">send</i>
                         </button>
                     </div>
@@ -247,30 +247,31 @@ include ("php/login.php");
             <div class="col s12 m4 l4">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/project1.jpg">
+                        <img class="activator" src="img/noticias/Noticia1.jpg">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="#">Project link</a></p>
+                        <span class="card-title activator grey-text text-darken-4">¿Tu startup será un éxito o un fracaso?<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="http://www.soyentrepreneur.com/28679-5-formas-de-saber-si-tu-startup-sera-un-exito-o-un-fracaso.html">Ver más</a></p>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
-                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                        <span class="card-title grey-text text-darken-4">¿Tu startup será un éxito o un fracaso?<i class="mdi-navigation-close right"></i></span>
+                        <p> Poner a prueba las suposiciones iniciales es una de las tareas más importantes de cualquier startup. Sin embargo, los grupos de enfoque suelen ser costosos, las encuestas tienen tasas de respuesta muy bajas y, si te dedicas a sondear a la gente que conoces, lo más probable es que te den las respuestas que piensan que quieres escuchar.</p>
                     </div>
                 </div>
             </div>
             <div class="col s12 m4 l4">
                 <div class="card">
                     <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/project2.jpeg">
+                        <img class="activator" src="img/noticias/Noticia2.jpg">
                     </div>
                     <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="#">Project link</a></p>
+                        <span class="card-title activator grey-text text-darken-4">Guía para elegir tu modelo de negocio<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="http://www.soyentrepreneur.com/27387-guia-para-elegir-tu-modelo-de-negocio.html
+">Ver más</a></p>
                     </div>
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
-                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
+                        <span class="card-title grey-text text-darken-4">Guía para elegir tu modelo de negocio<i class="mdi-navigation-close right"></i></span>
+                        <p>Hay una frase popular que dice: “no corras antes de caminar”. Trasladada al mundo de los negocios, diría: “no emprendas sin antes conocer e investigar”. Y es que para emprender de la mano de una marca (concepto conocido como “llave en mano”) primero debes conocer cómo opera el esquema de negocio de ésta para determinar si se adapta a tu perfil, gustos, personalidad y bolsillo.</p>
                     </div>
                 </div>
             </div>
