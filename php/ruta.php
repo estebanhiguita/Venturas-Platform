@@ -15,6 +15,7 @@ $mysqli =new mysqli($servername, $username, $password, $dbname);
 if ($mysqli->connect_errno) {
     echo $mysqli->connect_errno;
 }
+$mysqli->set_charset("utf8");
 //preg 1
 $select= "SELECT * FROM preguntas where preg_id = 1;";
 $result = mysqli_query($mysqli, $select); 

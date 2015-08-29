@@ -14,6 +14,7 @@ if(isset($_POST["action"])){
 if ($mysqli->connect_errno) {
     echo $mysqli->connect_errno;
 }
+    $mysqli->set_charset("utf8");
     
 $usuario=$_POST["user"];
 $contra=$_POST["pass"];
