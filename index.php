@@ -59,7 +59,7 @@ include ("php/login.php");
               <span class="card-title">Member Login</span>
             </div>
             <div class="row">
-                <form class="col s12" action="home.php" method="post">
+                <form class="col s12" action="index.php" method="post">
                   <div class="row">
                     <div class="input-field col s12">
                       <i class="material-icons prefix">account_circle</i>
@@ -123,38 +123,48 @@ include ("php/login.php");
         <div class="col s12 m8 offset-m2 l6 offset-l3">
           <div class="card vRed neutral-1">
             <div class="row">
-                <form class="col s12">
+                <form class="col s12" action="index.php" method="post">
                   <div class="row">
                     <div class="input-field col s6">
-                      <input id="last_name" type="text" class="validate">
-                      <label for="last_name">Nombre</label>
+                      <input id="nombre_registro" name="nombre_registro" type="text" class="validate">
+                      <label for="nombre_registro">Nombre</label>
                     </div>
                     <div class="input-field col s6">
-                      <input id="last_name" type="text" class="validate">
-                      <label for="last_name">Apellido</label>
+                      <input id="apellido_registro" name="apellido_registro" type="text" class="validate">
+                      <label for="apellido_registro">Apellido</label>
                     </div>
                   </div>
                 <div class="row">
                     <div class="input-field col s6">
-                      <input id="last_name" type="text" class="validate">
-                      <label for="last_name">Correo</label>
+                      <input id="correo_registro" name="correo_registro" type="text" class="validate">
+                      <label for="correo_registro">Correo</label>
                     </div>
                     <div class="input-field col s6">
-                      <input id="last_name" type="text" class="validate">
-                      <label for="last_name">País</label>
+                        
+                        <select class="browser-default countries" name="pais_registro"  id="countryId">                    
+                        <option>Country</option> 
+                          </select>
+                        
                     </div>
                 </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                <script src="http://lab.iamrohit.in/js/location.js"></script>
                 <div class="row">
                     <div class="input-field col s6">
-                      <input id="last_name" type="text" class="validate">
-                      <label for="last_name">Edad</label>
+                      <input id="edad_registro" type="number" class="validate">
+                      <label for="edad_registro">Edad</label>
                     </div>
                     <div class="input-field col s6">
-                      <input id="last_name" type="text" class="validate" type="password">
-                      <label for="last_name">Contraseña</label>
+                      <input id="contraseña" type="password" class="validate" type="password">
+                      <label for="contraseña">Contraseña</label>
                     </div>
                 </div>
-                    
+                    <div class="center-align">
+                        <button class="btn red white-text waves-effect waves-light" type="submit" name="registrarme"> Registrarme
+                            <i class="material-icons">send</i>
+                        </button>
+                    </div> 
+                      </form>
                   <div class="row">
                     <div class="col s6">
                         <form action="#">
@@ -164,12 +174,8 @@ include ("php/login.php");
                         </form>
                     </div>
                   </div>
-                    <div class="center-align">
-                        <button class="btn red white-text waves-effect waves-light" type="submit" name="action">Login
-                            <i class="material-icons">send</i>
-                        </button>
-                    </div>
-                </form>
+                    
+              
               </div>
           </div>
         </div>
@@ -389,6 +395,7 @@ include ("php/login.php");
 
 
     <!--  Scripts-->
+    
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
