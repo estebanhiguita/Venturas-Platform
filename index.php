@@ -34,9 +34,8 @@ include ("php/login.php");
                 <img style="width:50px;" src="img/logo-venturas.gif">
                 </a>
             <ul id="nav-mobile" class="right side-nav">
-                <li><a href="#intro">¿Qué es Venturas?</a></li>
                 <li><a href="#work">Noticias</a></li>
-                <li><a href="#team">Equipo</a></li>
+                <li><a href="#intro">¿Qué es Venturas?</a></li>
                 <li><a href="#contact">Contacto</a></li>
                 <li><a class="modal-trigger" href="#modal1">Login</a></li>
                 <li><a class="modal-trigger" href="#modal2">Registrarse</a></li>
@@ -89,7 +88,7 @@ include ("php/login.php");
                     </div>
                   </div>
                     <div class="center-align">
-                        <button class="btn red white-text waves-effect waves-light" type="submit" name="action">Login
+                        <button class="btn red white-text waves-effect waves-light" type="submit" name="action" action="pregunta1.php">Login
                             <i class="material-icons">send</i>
                         </button>
                     </div>
@@ -98,10 +97,12 @@ include ("php/login.php");
           </div>
         </div>
       </div>        
+<!--
     <div>
         <button class="btn light-blue darken-4 white-text waves-effect waves-light" href="#">Login with facebook</button>
         <button class="btn blue white-text waves-effect waves-light"  href="#">Login with google</button>
     </div>
+-->
     </div>
   </div>
     
@@ -112,10 +113,12 @@ include ("php/login.php");
         <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat right-align">X</a>
     </div>
       <p>!Estás a un paso de crear tu modelo de negocio de una manera divertida!. Empieza con una cuenta gratuita.</p>
+<!--
         <div>
-            <button class="btn light-blue darken-4 white-text waves-effect waves-light" href="#">Singin with facebook</button>
-            <button class="btn blue white-text waves-effect waves-light"  href="#">Singin with google</button>
+            <button class="btn light-blue darken-4 white-text waves-effect waves-light" href="#">Sing in with facebook</button>
+            <button class="btn blue white-text waves-effect waves-light"  href="#">Sing in with google</button>
         </div>
+-->
         <div class="row">
         <div class="col s12 m8 offset-m2 l6 offset-l3">
           <div class="card vRed neutral-1">
@@ -178,239 +181,144 @@ include ("php/login.php");
 <div class="section no-pad-bot" id="index-banner">
     <div class="container">
         <h1 class="text_h center header cd-headline letters type">
-            <span>I Love</span> 
+            <span>Soy</span> 
             <span class="cd-words-wrapper waiting">
-                <b class="is-visible">creating</b>
-                <b>innovating</b>
-                <b>entrepreneurship</b>
-                <b>Venturas</b>
+                <b class="is-visible">constructor de mis propios sueños
+</b>
+                <b>dedicado e innovador</b>
+                <b>emprendedor, cada día es una nueva aventura</b>
+                <b>aventurero, estoy en Venturas</b>
             </span>
         </h1>
     </div>
 </div>
 
+<!--News-->
+<div class="section scrollspy" id="work">
+    <div class="container">
+<!--        <h2 class="header text_b">Noticias</h2>-->
+        <h5>Actualidad para emprendedores</h5>
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/noticias/Noticia1.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">¿Tu startup será un éxito o un fracaso?<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="http://www.soyentrepreneur.com/28679-5-formas-de-saber-si-tu-startup-sera-un-exito-o-un-fracaso.html">Ver más</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">¿Tu startup será un éxito o un fracaso?<i class="mdi-navigation-close right"></i></span>
+                        <p> Poner a prueba las suposiciones iniciales es una de las tareas más importantes de cualquier startup. Sin embargo, los grupos de enfoque suelen ser costosos, las encuestas tienen tasas de respuesta muy bajas y, si te dedicas a sondear a la gente que conoces, lo más probable es que te den las respuestas que piensan que quieres escuchar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/noticias/Noticia2.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Guía para elegir tu modelo de negocio<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="http://www.soyentrepreneur.com/27387-guia-para-elegir-tu-modelo-de-negocio.html
+">Ver más</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Guía para elegir tu modelo de negocio<i class="mdi-navigation-close right"></i></span>
+                        <p>Hay una frase popular que dice: “no corras antes de caminar”. Trasladada al mundo de los negocios, diría: “no emprendas sin antes conocer e investigar”. Y es que para emprender de la mano de una marca (concepto conocido como “llave en mano”) primero debes conocer cómo opera el esquema de negocio de ésta para determinar si se adapta a tu perfil, gustos, personalidad y bolsillo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/noticias/Noticia3.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">10 herramientas digitales que todo emprendedor debe conocer<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="http://www.mdeinteligente.co/estrategia/herramientas-digitales-para-emprendedores-emprendimiento-medellin/">Ver más</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">10 herramientas digitales que todo emprendedor debe conocer<i class="mdi-navigation-close right"></i></span>
+                        <p>No podemos asegurarte que con ellas tengas todo a la mano, pero sí que pueden facilitar tu trabajo e impulsar tu negocio. ¡Haz de la tecnología tu aliada con estas herramientas digitales para emprendedores!
+</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6 l6">
+                <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                        <img class="activator" src="img/noticias/Noticia4.jpg">
+                    </div>
+                    <div class="card-content">
+                        <span class="card-title activator grey-text text-darken-4">Cuándo es momento de dejar tu trabajo<i class="mdi-navigation-more-vert right"></i></span>
+                        <p><a href="http://www.soyentrepreneur.com/29101-cuando-es-momento-de-dejar-tu-trabajo.html
+">Ver más</a></p>
+                    </div>
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">Cuándo es momento de dejar tu trabajo<i class="mdi-navigation-close right"></i></span>
+                        <p>Casi todos tenemos alguna forma de espíritu emprendedor y con ello, el potencial de manejar un negocio propio. Pero este estilo de vida no es para todos. Muchas personas deciden poner sus talentos a trabajar para la compañía de alguien más, haciendo transformaciones desde adentro, siendo intrapreneurs. Para otros, laborar en una compañía más no es una opción, por lo que deciden abrir sus propios negocios.
+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
 <!--Intro and service-->
 <div id="intro" class="section scrollspy">
     <div class="container">
         <div class="row">
             <div  class="col s12">
-                <h2 class="center header text_h2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="span_h2"> Phasellus  </span>vestibulum lorem risus, nec suscipit lorem <span class="span_h2"> laoreet quis.</span </h2>
+                <h2 class="center header text_h2">Venturas es la plataforma para  <span class="span_h2"> emprendedores  </span>que te entiende y te <span class="span_h2">empodera</span> para construir tus proyectos. Tenemos una Ruta especializada para que desarrolles con claridad tus <span class="span_h2"> ideas de negocios.</span> </h2>
             </div>
 
-            <div  class="col s12 m4 l4">
+            <div  class="col s12 m3 l3">
                 <div class="center promo promo-example">
                     <i class="mdi-image-flash-on"></i>
-                    <h5 class="promo-caption">Speeds up development</h5>
-                    <p class="light center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+                    <h5 class="promo-caption">Ser emprendedor es cosa de valientes</h5>
+                    <p class="light center"> Muchos sueñan hacerlo, pocos se lanzan a realizarlo. Es un sueño por el que se lucha día a día, y no es raro que ni tu familia ni tus amigos entiendan bien por lo que se pasa.
+</p>
                 </div>
             </div>
-            <div class="col s12 m4 l4">
+            <div class="col s12 m3 l3">
                 <div class="center promo promo-example">
                     <i class="mdi-social-group"></i>
-                    <h5 class="promo-caption">User Experience Focused</h5>
-                    <p class="light center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <h5 class="promo-caption">Plataforma para emprendedores</h5>
+                    <p class="light center">Mejor aún: para el estilo de vida de los emprendedores. Un sitio para informarse, para proyectarse, conectar ideas y oportunidades, incluso otros emprendedores y de paso, para entretenerse un poco.
+</p>
                 </div>
             </div>
-            <div class="col s12 m4 l4">
+            <div class="col s12 m3 l3">
                 <div class="center promo promo-example">
                     <i class="mdi-hardware-desktop-windows"></i>
-                    <h5 class="promo-caption">Fully responsive</h5>
-                    <p class="light center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                    <h5 class="promo-caption">Más allá de los datos</h5>
+                    <p class="light center">Acá encuentras, más allá de los datos, noticias y ayudas sectorizadas, -sin duda, de gran importancia para tu labor-, una ruta de empresarismo ciudadosamente diseñada para desarrollar tus ideas de negocios, con guías y herramientas que te apoyan y mientras avanzas en el proceso.
+</p>
                 </div>
+            </div>
+            <div class="col s12 m3 l3">
+                <div class="center promo promo-example">
+                    <i class="mdi-hardware-desktop-windows"></i>
+                    <h5 class="promo-caption">!Divertido!</h5>
+                    <p class="light center">Paralelamente, podrás conocer las historias de personajes que viven experiencias propias de los emprendedores, allí muchas de las situaciones que has vivido estarán presentes, y otras que no, pero que tal vez te puedan resultar de utilidad, así sea para sonreír un rato.
+</p>
+                </div>
+            </div>
+            
+            <div  class="col s12">
+                <h4 class="center header text_h2">Si eres emprendedor, o estás a punto de comenzar, te invitamos a que conozcas Venturas y todo lo que tiene para tí.
+</h4>
             </div>
         </div>
     </div>
-</div>
-
-<!--Work-->
-<div class="section scrollspy" id="work">
-    <div class="container">
-        <h2 class="header text_b">Noticias</h2>
-        <h5>Actualidad para emprendedores</h5>
-        <div class="row">
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/project1.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="#">Project link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
-                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/project2.jpeg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="#">Project link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
-                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/project3.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="#">Project link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
-                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/project4.jpg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="#">Project link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
-                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/project5.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="#">Project link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
-                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4 l4">
-                <div class="card">
-                    <div class="card-image waves-effect waves-block waves-light">
-                        <img class="activator" src="img/project6.jpeg">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Project Title <i class="mdi-navigation-more-vert right"></i></span>
-                        <p><a href="#">Project link</a></p>
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">Project Title <i class="mdi-navigation-close right"></i></span>
-                        <p>Here is some more information about this project that is only revealed once clicked on.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+</div>    
 
 <!--Parallax-->
 <div class="parallax-container">
     <div class="parallax"><img src="img/parallax1.png"></div>
-</div>
-
-<!--Team-->
-<div class="section scrollspy" id="team">
-    <div class="container">
-        <h2 class="header text_b"> Nuestro Equipo </h2>
-        <div class="row">
-            <div class="col s12 m4">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/avatar1.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Alejandro Eusse <br/>
-                            <small><em><a class="red-text text-darken-1" href="#">Chief Transmedia Officer</a></em></small></span>
-                        <p>
-                            <a class="blue-text text-lighten-2" href="https://www.facebook.com/joash.c.pereira">
-                                <i class="fa fa-facebook-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
-                                <i class="fa fa-twitter-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira">
-                                <i class="fa fa-google-plus-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
-                                <i class="fa fa-linkedin-square"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/avatar3.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">
-                            Esteban Higuita <br/>
-                            <small><em><a class="red-text text-darken-1" href="#">Chief Technology Officer</a></em></small></span>
-                        <p>
-                            <a class="blue-text text-lighten-2" href="https://www.facebook.com/joash.c.pereira">
-                                <i class="fa fa-facebook-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
-                                <i class="fa fa-twitter-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira">
-                                <i class="fa fa-google-plus-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
-                                <i class="fa fa-linkedin-square"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 m4">
-                <div class="card card-avatar">
-                    <div class="waves-effect waves-block waves-light">
-                        <img class="activator" src="img/avatar2.png">
-                    </div>
-                    <div class="card-content">
-                        <span class="card-title activator grey-text text-darken-4">Diana Osorio<br/>
-                            <small><em><a class="red-text text-darken-1" href="#">Chief Executive Officer</a></em></small>
-                        </span>
-                        <p>
-                            <a class="blue-text text-lighten-2" href="https://www.facebook.com/joash.c.pereira">
-                                <i class="fa fa-facebook-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" href="https://twitter.com/im_joash">
-                                <i class="fa fa-twitter-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" href="https://plus.google.com/u/0/+JoashPereira">
-                                <i class="fa fa-google-plus-square"></i>
-                            </a>
-                            <a class="blue-text text-lighten-2" href="https://www.linkedin.com/in/joashp">
-                                <i class="fa fa-linkedin-square"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>
 
 <!--Footer-->
@@ -446,25 +354,25 @@ include ("php/login.php");
             <div class="col l3 s12">
                 <h5 class="white-text">venturas.co</h5>
                 <ul>
-                    <li><a class="white-text" href="http://www.joashpereira.com/">Home</a></li>
-                    <li><a class="white-text" href="http://www.joashpereira.com/blog">Blog</a></li>
+                    <li><a class="white-text" href="#">Home</a></li>
+                    <li><a class="white-text" href="#">Blog</a></li>
                 </ul>
             </div>
             <div class="col l3 s12">
                 <h5 class="white-text">Social</h5>
                 <ul>
                     <li>
-                        <a class="white-text" href="https://www.facebook.com/joash.c.pereira">
+                        <a class="white-text" href="#">
                             <i class="small fa fa-facebook-square white-text"></i> Facebook
                         </a>
                     </li>
                     <li>
-                        <a class="white-text" href="https://github.com/joashp">
+                        <a class="white-text" href="#">
                             <i class="small fa fa-github-square white-text"></i> Github
                         </a>
                     </li>
                     <li>
-                        <a class="white-text" href="https://www.linkedin.com/in/joashp">
+                        <a class="white-text" href="#">
                             <i class="small fa fa-linkedin-square white-text"></i> Linkedin
                         </a>
                     </li>

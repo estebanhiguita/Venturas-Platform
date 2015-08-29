@@ -14,6 +14,7 @@ if(isset($_POST["action"])){
 if ($mysqli->connect_errno) {
     echo $mysqli->connect_errno;
 }
+    $mysqli->set_charset("utf8");
     
 $usuario=$_POST["user"];
 $contra=$_POST["pass"];
@@ -24,11 +25,12 @@ $numrows=mysqli_num_rows( $result );
 
 if ($row = mysqli_fetch_array($result) and $numrows >0){
 
-   do { 
+   do {
+       header('Location: /venturas-platform/pregunta1.php'); 
      echo  "<script> alert('Usuario y contraseña correctos'); </script> ";
    } while ($row = mysqli_fetch_array($result)); 
 
-} else { 
+} else {
 echo  "<script> alert('Usuario y contraseña incorrectos'); </script> ";
 }
 }
