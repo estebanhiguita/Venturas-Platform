@@ -30,7 +30,7 @@ include ("php/ruta.php");
  <div class="navbar-fixed">
     <nav id="nav_f" class="default_color" role="navigation">
         <div class="container">
-            <div class="nav-wrapper"><a id="logo-container" href="#top" class="brand-logo">
+            <div class="nav-wrapper"><a id="logo-container" href="index.php" class="brand-logo">
                 <img style="width:50px;" src="img/logo-venturas.gif">
                 </a>
             <ul id="nav-mobile" class="right side-nav">
@@ -54,7 +54,31 @@ include ("php/ruta.php");
       </ul>
     </div>
     <div id="fase0" class="col s12">
-        
+        <div class="col s6 offset-s3">
+        <div class="card-panel white hoverable">
+        <div class="row">
+        <h3>Fase 0</h3>
+        <p>El desarrollo de una idea de negocio, bien sea sobre un producto o servicio, requiere la identificación previa de un problema, una oportunidad o una necesidad. Si no tienes claro lo anterior, es recomendable que te devuelvas en el proceso y pienses cuidadosamente qué estarías logrando con tu producto: <b>¿resolver algún problema? ¿Aprovechar una oportunidad? ¿Satisfacer una necesidad? </b></p>
+        <p>Recuerda que las oportunidades están estrechamente relacionadas con las tecnologías emergentes y el potencial de país, entre otros, mientras que los problemas y las necesidades tienen que ver con aquellos productos o servicios que logran aliviar algún dolor (entendiendo esto como algo que resulta molesto o que podría ser objeto de mejora y por lo que la gente pagaría para sentirse mejor) en tus clientes.</p>
+        <h6>¿Ya lo tienes claro? Indica qué fue lo que identificaste.
+</h6>
+        <form action="#">
+    <p>
+      <input name="group1" type="radio" id="test1" />
+      <label for="test1">Problema</label>
+    </p>
+    <p>
+      <input name="group1" type="radio" id="test2" />
+      <label for="test2">Oportunidad</label>
+    </p>
+    <p>
+      <input class="with-gap" name="group1" type="radio" id="test3"  />
+      <label for="test3">Necesidad</label>
+    </p>
+  </form>
+                </div>
+            </div>
+        </div>
     </div>
     <div id="fase1" class="col s12">
         <div class="col s6 offset-s3">
@@ -74,7 +98,7 @@ include ("php/ruta.php");
                 </div>
               </div>
                 <div class="center-align">
-                    <button class="btn red white-text waves-effect waves-light" type="submit" name="pregunta">
+                    <button action="pregunta1.php#fase2" class="btn red white-text waves-effect waves-light" type="submit" name="pregunta">
                         <i class="material-icons">save</i>Guardar
                     </button>
                 </div>
@@ -111,7 +135,10 @@ include ("php/ruta.php");
             </div>
       </div>
     </div>
-    <div id="fase3" class="col s12">Muy pronto podrás continuar</div>
+    <div id="fase3" class="col s12"><br>
+        <h1>Muy pronto podrás continuar
+            </h1>
+        </div>
   </div>
         
 <!-- ayudas-->

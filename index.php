@@ -59,7 +59,7 @@ include ("php/login.php");
               <span class="card-title">Member Login</span>
             </div>
             <div class="row">
-                <form class="col s12" action="home.php" method="post">
+                <form class="col s12" action="index.php" method="post">
                   <div class="row">
                     <div class="input-field col s12">
                       <i class="material-icons prefix">account_circle</i>
