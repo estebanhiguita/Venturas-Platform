@@ -153,11 +153,19 @@ include ("php/registro.php");
                 <script src="http://lab.iamrohit.in/js/location.js"></script>
                 <div class="row">
                     <div class="input-field col s6">
+<<<<<<< HEAD
                       <input id="edad_registro" type="number" name="edad_registro"class="validate">
                       <label for="edad_registro">Edad</label>
                     </div>
                     <div class="input-field col s6">
                       <input id="contraseña" name="contraseña" type="password" class="validate" type="password">
+=======
+                      <input id="edad_registro" type="number" class="validate">
+                      <label for="edad_registro">Edad</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="contraseña" type="password" class="validate" type="password">
+>>>>>>> origin/phpAna
                       <label for="contraseña">Contraseña</label>
                     </div>
                 </div>
