@@ -6,6 +6,12 @@ $password = "ana";
 $dbname = "venturas";
 $usuario="";
 $contra="";
+$nombre="";
+$apellidos="";
+$correo="";
+$pais="";
+$edad="";
+$contraseña="";
     
 
 
@@ -18,6 +24,8 @@ if ($mysqli->connect_errno) {
     
 $usuario=$_POST["user"];
 $contra=$_POST["pass"];
+
+
 
 $select= "SELECT * FROM login where usuario = '".$usuario."' and contrasena = '".$contra."' ;";
 $result = mysqli_query($mysqli, $select); 
