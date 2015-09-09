@@ -18,13 +18,13 @@ include ("php/ruta.php");
     </head>
     <body>
         <!-- Pre Loader -->
-<div id="loader-wrapper">
-    <div id="loader"></div>
- 
-    <div class="loader-section section-left"></div>
-    <div class="loader-section section-right"></div>
- 
-</div>
+        <div id="loader-wrapper">
+            <div id="loader"></div>
+
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+
+        </div>
         <div id="loader-wrapper">
             <div id="loader"></div>
 
@@ -41,7 +41,7 @@ include ("php/ruta.php");
                         <img style="width:50px;" src="img/logo-venturas.gif">
                         </a>
                         <ul id="nav-mobile" class="right side-nav">
-<!--                            <li><a href="#work">MI RUTA</a></li>-->
+                            <!--                            <li><a href="#work">MI RUTA</a></li>-->
                             <li><a href="#team">UPGRADE</a></li>
                             <li><a href="#contact">CONTACTO</a></li>
                         </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
@@ -153,20 +153,21 @@ include ("php/ruta.php");
 
         <div id="modal1" class="modal">
             <div class="modal-content">
-                <h4>Retos</h4>
-                <p><?php echo $retos1;?></p>
-                <br>
-                <h4>Ejemplo</h4>
-                <p><?php echo $ejemplo1;?></p>
-                <br>
-                <h4>Recuerda</h4>
-                <p><?php echo $recuerda1;?></p>
-                <br>
-                <h4>Ejemplo</h4>
-                <p><?php echo $ejemplo1;?></p>
-                <br>
-                <h4>Ideas</h4>
-                <p><?php echo $ideas1;?></p>
+                <h1>Ayuda</h1>
+                <ul class="collapsible" data-collapsible="expandible">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">filter_1</i></div>
+                        <div class="collapsible-body"><p><?php echo $retos1;?></p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">filter_2</i></div>
+                        <div class="collapsible-body"><p><?php echo $ejemplo1;?></p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">filter_3</i></div>
+                        <div class="collapsible-body"><p><?php echo $recuerda1;?></p></div>
+                    </li>
+                </ul>
             </div>
             <div class="modal-footer">
                 <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Regresa y !hazlo!</a>
@@ -175,25 +176,28 @@ include ("php/ruta.php");
 
         <div id="modal2" class="modal">
             <div class="modal-content">
-                <h4>Retos</h4>
-                <p><?php echo $retos2;?></p>
-                <br>
-                <h4>Ejemplo</h4>
-                <p><?php echo $ejemplo2;?></p>
-                <br>
-                <h4>Recuerda</h4>
-                <p><?php echo $recuerda2;?></p>
-                <br>
-                <h4>Ejemplo</h4>
-                <p><?php echo $ejemplo2;?></p>
-                <br>
-                <h4>Ideas</h4>
-                <p><?php echo $ideas2;?></p>
+                <h1>Ayuda</h1>
+                <ul class="collapsible" data-collapsible="expandible">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">filter_1</i></div>
+                        <div class="collapsible-body"><p><?php echo $retos2;?></p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">filter_2</i></div>
+                        <div class="collapsible-body"><p><?php echo $ejemplo2;?></p></div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">filter_3</i></div>
+                        <div class="collapsible-body"><p><?php echo $recuerda2;?></p></div>
+                    </li>
+                </ul>
             </div>
             <div class="modal-footer">
                 <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Regresa y !hazlo!</a>
             </div>
         </div>
+        
+        footer
 
         <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
         <script src="js/materialize.js"></script>
@@ -202,6 +206,9 @@ include ("php/ruta.php");
             $(document).ready(function(){
                 $('.modal-trigger').leanModal();
                 $('ul.tabs').tabs();
+            });
+            $('.collapsible').collapsible({
+                accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
             });
         </script>
     </body>
