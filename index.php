@@ -4,13 +4,15 @@ include ("php/login.php");
 ?>
 <html>
     <head>
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
         <meta name="theme-color" content="#2196F3">
-        <title>Venturas platform</title>
+        <title>Venturas para emprendedores</title>
+        
 
         <!-- CSS  -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">
+<!--        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">-->
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
         <link href="css/materialize.css" type="text/css" rel="stylesheet">
         <link href="css/style.css" type="text/css" rel="stylesheet" >
@@ -30,6 +32,7 @@ include ("php/login.php");
 
 
         <!--Navigation-->
+<!--
         <nav>
             <div class="container">
                 <div class="nav-wrapper">
@@ -48,8 +51,8 @@ include ("php/login.php");
             </ul>
             <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
         </nav>
+-->
 
-<!--
         <div class="navbar-fixed">
             <nav id="nav_f" class="default_color" role="navigation">
                 <div class="container">
@@ -67,7 +70,6 @@ include ("php/login.php");
                 </div>
             </nav>
         </div>
--->
 
         <!-- Modal Login -->
         <div id="modal1" class="modal">
