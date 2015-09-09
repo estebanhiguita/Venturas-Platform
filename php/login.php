@@ -1,15 +1,22 @@
 <?php
-session_start();
+include("registro.php");
+//session_start();
 $servername = "localhost";
 $username = "ana";
 $password = "ana";
 $dbname = "venturas";
 $usuario="";
 $contra="";
+$nombre="";
+$apellidos="";
+$correo="";
+$pais="";
+$edad="";
+$contraseña="";
     
 
 
-if(isset($_POST["action"])){
+if(isset($_POST["login"])){
     $mysqli =new mysqli($servername, $username, $password, $dbname);
 if ($mysqli->connect_errno) {
     echo $mysqli->connect_errno;
@@ -19,15 +26,20 @@ if ($mysqli->connect_errno) {
 $usuario=$_POST["user"];
 $contra=$_POST["pass"];
 
-$select= "SELECT * FROM login where usuario = '".$usuario."' and contrasena = '".$contra."' ;";
+$select= "SELECT * FROM login where email = '".$usuario."' and contrasena = '".$contra."' ;";
 $result = mysqli_query($mysqli, $select); 
 $numrows=mysqli_num_rows( $result );
 
-if ($row = mysqli_fetch_array($result) and $numrows >0){
+if ($row = mysqli_fetch_array($result) ){
 
    do {
-       header('Location: /venturas-platform/pregunta1.php'); 
-     echo  "<script> alert('Usuario y contraseña correctos'); </script> ";
+       if($numrows>0){
+           $_SESSION["usuario"]=$usuario;
+       echo  "<script> alert('Usuario y contraseña correctos'); </script> ";
+       header('Location:pregunta1.php'); 
+       
+       }
+     
    } while ($row = mysqli_fetch_array($result)); 
 
 } else {

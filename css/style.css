@@ -212,10 +212,6 @@ nav ul a {
         font-weight: 100;
         color: white;
     }
-    
-    #logo-container {
-    margin-left: 50px;
-}
 }
 
 input, textarea {
@@ -297,6 +293,3 @@ footer.page-footer {
    .input-field .prefix.active {
      color: #fff;
    }
-#logo-container {
-    margin-left: 50px;
-}
