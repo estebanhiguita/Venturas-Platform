@@ -95,61 +95,9 @@ if(empty($_SESSION["usuario"]))
                     </div>
                 </div>
             </div>
-            <div id="fase1" class="col s12">
-                <div class="col s6 offset-s3">
-                    <div class="card-panel white hoverable">
-
-                        <div class="row">
-                            <form action="pregunta1.php" method="post"  class="col s12">
-                                <div class="row">
-                                    <h3>
-                                        <?php echo $pregunta;?>
-                                    </h3>
-                                    <h6><?php echo $descripcion;?></h6>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <input id="icon_prefix" type="text" name="rta">
-                                    </div>
-                                </div>
-                                <div class="center-align">
-                                    <button action="pregunta1.php#fase2" class="btn red white-text waves-effect waves-light" type="submit" name="pregunta">
-                                        <i class="material-icons">save</i>Guardar
-                                    </button>
-                                </div>
-                            </form>
-                            <a class="btn-floating btn-large waves-effect waves-light red right modal-trigger" href="#modal1"><i class="material-icons">live_help</i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="fase2" class="col s12">
-                <div class="col s6 offset-s3">
-                    <div class="card-panel white hoverable">
-                        <div class="row">
-                            <form class="col s12">
-                                <div class="row">
-                                    <h3>
-                                        <?php echo $pregunta2;?>
-                                    </h3>
-                                    <h6><?php echo $descripcion2;?></h6>
-                                </div>
-                                <div class="row">
-                                    <div class="input-field col s12">
-                                        <input id="icon_prefix" type="text" class="materialize-textarea" name="rta2">
-                                    </div>
-                                </div>
-                                <div class="center-align">
-                                    <button class="btn red white-text waves-effect waves-light" type="submit" name="pregunta/2">
-                                        <i class="material-icons">save</i>Guardar
-                                    </button>
-                                </div>
-                            </form>
-                            <a class="btn-floating btn-large waves-effect waves-light red right modal-trigger" href="#modal2"><i class="material-icons">live_help</i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php echo $_SESSION["html"];?>
+            
+           
             <div id="fase3" class="col s12"><br>
                 <h1>Muy pronto podrás continuar
                 </h1>

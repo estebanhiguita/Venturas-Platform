@@ -16,34 +16,45 @@ if ($mysqli->connect_errno) {
     echo $mysqli->connect_errno;
 }
 $mysqli->set_charset("utf8");
-//preg 1
-$select= "SELECT * FROM preguntas where preg_id = 1;";
+$select= "SELECT * FROM preguntas;";
 $result = mysqli_query($mysqli, $select); 
 $numrows=mysqli_num_rows( $result );
-$row = mysqli_fetch_array($result); 
-$pregunta = $row["titulo"];
-$descripcion = $row["descripcion"];
+$pila = array();
+$pregunta = array();
+$descripcion = array();
+$pregunta_id = array();
+$pregunta_ayuda_id = array();
+while($row = mysqli_fetch_array($result)){
+    array_push($pregunta, $row[0]);
+    array_push($descripcion, $row[1]);
+    array_push($pregunta_id, $row[2]);
+    array_push($pregunta_ayuda_id, $row[3]);
 
-//preg 1
-$select= "SELECT * FROM preguntas where preg_id = 2;";
-$result = mysqli_query($mysqli, $select); 
-$numrows=mysqli_num_rows( $result );
-$row = mysqli_fetch_array($result); 
-$pregunta2 = $row["titulo"];
-$descripcion2 = $row["descripcion"];
-
-if(isset($_POST["pregunta"])){
-    $rta=$_POST["rta"];
-    if(!empty($rta)){   
-    $query="insert into repuestas (descripcion) values('".$rta."')";
-    $result = mysqli_query($mysqli, $query);
-        if($result){
-            echo "respuesta guardada";
-        }
-        else{
-        echo "error";
-        }
-    }
-    echo "la respuesta esta vacia";
 }
-?>
+array_push($pila, $pregunta,$descripcion,$pregunta_id,$pregunta_ayuda_id);
+//print_r($pila);
+$html="";
+for($i=0;$i<$numrows; $i++)
+{
+    $html.='<div id="fase'.$i.'" class="col s12">'.
+        '<div class="col s6 offset-s3">'.
+        '<div class="card-panel white hoverable">'.
+        '<div class="row">'.
+        '<form action="pregunta'.$i.'.php" method="post"  class="col s12">'.
+        '<div class="row">'.
+        '<h3>'.$pila[0][$i].'</h3>'.
+        '<h6>'.$pila[1][$i].'</h6></div>'.
+        '<div class="row">'.
+            '<div class="input-field col s12">'.
+                '<input id="icon_prefix" type="text" name="rta">'.
+            '</div>'.
+        '</div>'.
+'<div class="center-align">'.
+'<button action="pregunta1.php#fase2" class="btn red white-text waves-effect waves-light" type="submit" name="pregunta">'.
+        '<i class="material-icons">save</i>Guardar'.
+    '</button></div></form>'.
+'<a class="btn-floating btn-large waves-effect waves-light red right modal-trigger" href="#modal1"><i class="material-icons">live_help</i></a>'.
+'</div></div></div></div>';
+    
+}
+$_SESSION["html"]=$html;?>
