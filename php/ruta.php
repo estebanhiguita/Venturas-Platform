@@ -16,34 +16,22 @@ if ($mysqli->connect_errno) {
     echo $mysqli->connect_errno;
 }
 $mysqli->set_charset("utf8");
-//preg 1
-$select= "SELECT * FROM preguntas where preg_id = 1;";
+$select= "SELECT * FROM preguntas;";
 $result = mysqli_query($mysqli, $select); 
 $numrows=mysqli_num_rows( $result );
-$row = mysqli_fetch_array($result); 
-$pregunta = $row["titulo"];
-$descripcion = $row["descripcion"];
+$pila = array();
+$pregunta = array();
+$descripcion = array();
+$pregunta_id = array();
+$pregunta_ayuda_id = array();
+while($row = mysqli_fetch_array($result)){
+array_push($pregunta, $row[0]);
+array_push($descripcion, $row[1]);
+array_push($pregunta_id, $row[2]);
+array_push($pregunta_ayuda_id, $row[3]);
 
-//preg 1
-$select= "SELECT * FROM preguntas where preg_id = 2;";
-$result = mysqli_query($mysqli, $select); 
-$numrows=mysqli_num_rows( $result );
-$row = mysqli_fetch_array($result); 
-$pregunta2 = $row["titulo"];
-$descripcion2 = $row["descripcion"];
-
-if(isset($_POST["pregunta"])){
-    $rta=$_POST["rta"];
-    if(!empty($rta)){   
-    $query="insert into repuestas (descripcion) values('".$rta."')";
-    $result = mysqli_query($mysqli, $query);
-        if($result){
-            echo "respuesta guardada";
-        }
-        else{
-        echo "error";
-        }
-    }
-    echo "la respuesta esta vacia";
 }
+array_push($pila, $pregunta,$descripcion,$pregunta_id,$pregunta_ayuda_id);
+print_r($pila);
+
 ?>
