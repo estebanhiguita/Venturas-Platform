@@ -1,6 +1,5 @@
 <?php
-include("registro.php");
-//session_start();
+session_start();
 $servername = "localhost";
 $username = "ana";
 $password = "ana";

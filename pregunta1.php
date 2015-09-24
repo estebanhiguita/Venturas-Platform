@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <?php
+include ("php/registro.php");
 include ("php/ruta.php");
+if(empty($_SESSION["usuario"]))
+{
+        
+     echo "<script>alert('Debes registrarte para poder acceder')</script>";
+    header("Location: index.php");
+}
 ?>
 <html>
     <head>
@@ -34,21 +41,23 @@ include ("php/ruta.php");
         </div>
 
         <!--Navigation-->
-        <div class="navbar-fixed">
-            <nav id="nav_f" class="default_color" role="navigation">
-                <div class="container">
-                    <div class="nav-wrapper"><a id="logo-container" href="index.php" class="brand-logo">
-                        <img style="width:50px;" src="img/logo-venturas.gif">
-                        </a>
-                        <ul id="nav-mobile" class="right side-nav">
-                            <!--                            <li><a href="#work">MI RUTA</a></li>-->
-                            <li><a href="#team">UPGRADE</a></li>
-                            <li><a href="#contact">CONTACTO</a></li>
-                        </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-                    </div>
-                </div>
-            </nav>
+ <div class="navbar-fixed">
+    <nav id="nav_f" class="default_color" role="navigation">
+        <div class="container">
+            <div class="nav-wrapper"><a id="logo-container" href="#top" class="brand-logo">
+                <img style="width:50px;" src="img/logo-venturas.gif">
+                </a>
+            <ul id="nav-mobile" class="right side-nav">
+                <li><a href="#work">MI RUTA</a></li>
+                <li><a href="#work">FASE 0</a></li>
+                <li><a href="#team">UPGRADE</a></li>
+                <li><a href="#contact">CONTACTO</a></li>
+                <li><a href="index.php?action=callfunction"><i class="material-icons">power_settings_new</i></a></li>
+            </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
         </div>
+    </nav>
+</div>
         <!-- Preguntas-->
         <div class="row">
             <div class="col s12">

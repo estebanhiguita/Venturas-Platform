@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <?php
-include ("php/login.php");
 include ("php/registro.php");
 if(isset($_GET['action']) && $_GET['action'] == 'callfunction'){
     //call function here
@@ -78,137 +77,146 @@ if(isset($_GET['action']) && $_GET['action'] == 'callfunction'){
             </nav>
         </div>
 
-        <!-- Modal Login -->
-        <div id="modal1" class="modal">
-            <div class="modal-content">
-                <div class="right-align">
-                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat right-align">X</a>
-                </div>
-                <p>!Estás a un paso de empezar a crear tu modelo de negocio de una manera divertida!</p>
-                <div class="row">
-                    <div class="col s12 m8 offset-m2 l6 offset-l3">
-                        <div class="card vRed neutral-1">
-                            <div class="card-content white-text">
-                                <span class="card-title">Member Login</span>
-                            </div>
-                            <div class="row">
-                                <form class="col s12" action="index.php" method="post">
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <i class="material-icons prefix">account_circle</i>
-                                            <input id="icon_prefix" type="text" class="validate" name="user">
-                                            <label for="icon_prefix">User</label>
-                                        </div>
-                                        <div class="input-field col s12">
-                                            <i class="material-icons prefix">lock_outline </i>
-                                            <input id="password" type="password" class="validate" name="pass">
-                                            <label for="password">Password</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <!--
-<div class="col s6">
-<form action="#">
-<p>
-<input type="checkbox" id="remember" />
-<label for="remember">Recordarme</label>
-</p>
-</form>
-</div>
--->
-                                        <div class="col s6">
-                                            <a href="#">Olvidé mi contraseña</a>
-                                        </div>
-                                    </div>
-                                    <div class="center-align">
-                                        <button class="btn red white-text waves-effect waves-light" type="submit" name="action" action="pregunta1.php">Login
-                                            <i class="material-icons">send</i>
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>        
-                <!--
-<div>
-<button class="btn light-blue darken-4 white-text waves-effect waves-light" href="#">Login with facebook</button>
-<button class="btn blue white-text waves-effect waves-light"  href="#">Login with google</button>
-</div>
--->
+<!-- Modal Login -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+    <div class="right-align">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat right-align">X</a>
+    </div>
+      <p>!Estás a un paso de empezar a crear tu modelo de negocio de una manera divertida!</p>
+        <div class="row">
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+          <div class="card vRed neutral-1">
+            <div class="card-content white-text">
+              <span class="card-title">Member Login</span>
             </div>
-        </div>
-
-        <!-- Modal Registro -->
-        <div id="modal2" class="modal">
-            <div class="modal-content">
-                <div class="right-align">
-                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat right-align">X</a>
-                </div>
-                <p>!Estás a un paso de crear tu modelo de negocio de una manera divertida!. Empieza con una cuenta gratuita.</p>
-                <!--
-<div>
-<button class="btn light-blue darken-4 white-text waves-effect waves-light" href="#">Sing in with facebook</button>
-<button class="btn blue white-text waves-effect waves-light"  href="#">Sing in with google</button>
-</div>
--->
-                <div class="row">
-                    <div class="col s12 m8 offset-m2 l6 offset-l3">
-                        <div class="card vRed neutral-1">
-                            <div class="row">
-                                <form class="col s12">
-                                    <div class="row">
-                                        <div class="input-field col s6">
-                                            <input id="last_name" type="text" class="validate">
-                                            <label for="last_name">Nombre</label>
-                                        </div>
-                                        <div class="input-field col s6">
-                                            <input id="last_name" type="text" class="validate">
-                                            <label for="last_name">Apellido</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="input-field col s6">
-                                            <input id="last_name" type="text" class="validate">
-                                            <label for="last_name">Correo</label>
-                                        </div>
-                                        <div class="input-field col s6">
-                                            <input id="last_name" type="text" class="validate">
-                                            <label for="last_name">País</label>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="input-field col s6">
-                                            <input id="last_name" type="text" class="validate">
-                                            <label for="last_name">Edad</label>
-                                        </div>
-                                        <div class="input-field col s6">
-                                            <input id="last_name" type="text" class="validate" type="password">
-                                            <label for="last_name">Contraseña</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col s6">
-                                            <form action="#">
-                                                <p>
-                                                    ¿Ya tienes una cuenta inicia sesión <a class="modal-trigger modal-action modal-close waves-effect waves-green btn-flat right-align" href="#modal1">aquí</a>
-                                                </p>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="center-align">
-                                        <button class="btn red white-text waves-effect waves-light" type="submit" name="action">Login
-                                            <i class="material-icons">send</i>
-                                        </button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+            <div class="row">
+                <form class="col s12" action="index.php" method="post">
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">account_circle</i>
+                      <input id="icon_prefix" type="text" class="validate" name="user">
+                      <label for="icon_prefix">User</label>
                     </div>
-                </div>        
-            </div>
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">lock_outline </i>
+                      <input id="password" type="password" class="validate" name="pass">
+                      <label for="password">Password</label>
+                    </div>
+                  </div>
+                  <div class="row">
+<!--
+                    <div class="col s6">
+                        <form action="#">
+                            <p>
+                              <input type="checkbox" id="remember" />
+                              <label for="remember">Recordarme</label>
+                            </p>
+                        </form>
+                    </div>
+-->
+                    <div class="col s6">
+                        <a href="#">Olvidé mi contraseña</a>
+                    </div>
+                  </div>
+                    <div class="center-align">
+                        <button class="btn red white-text waves-effect waves-light" type="submit" name="login" method="post" action="index.php">Login
+                            <i class="material-icons">send</i>
+                        </button>
+                    </div>
+                </form>
+              </div>
+          </div>
         </div>
+      </div>        
+<!--
+    <div>
+        <button class="btn light-blue darken-4 white-text waves-effect waves-light" href="#">Login with facebook</button>
+        <button class="btn blue white-text waves-effect waves-light"  href="#">Login with google</button>
+    </div>
+-->
+    </div>
+  </div>
+    
+    <!-- Modal Registro -->
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+    <div class="right-align">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat right-align">X</a>
+    </div>
+      <p>!Estás a un paso de crear tu modelo de negocio de una manera divertida!. Empieza con una cuenta gratuita.</p>
+<!--
+        <div>
+            <button class="btn light-blue darken-4 white-text waves-effect waves-light" href="#">Sing in with facebook</button>
+            <button class="btn blue white-text waves-effect waves-light"  href="#">Sing in with google</button>
+        </div>
+-->
+        <div class="row">
+        <div class="col s12 m8 offset-m2 l6 offset-l3">
+          <div class="card vRed neutral-1">
+            <div class="row">
+                <form class="col s12" action="index.php" method="post">
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="nombre_registro" name="nombre_registro" type="text" class="validate">
+                      <label for="nombre_registro">Nombre</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="apellido_registro" name="apellido_registro" type="text" class="validate">
+                      <label for="apellido_registro">Apellido</label>
+                    </div>
+                  </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                      <input id="correo_registro" name="correo_registro" type="text" class="validate">
+                      <label for="correo_registro">Correo</label>
+                    </div>
+                    <div class="input-field col s6">
+                        
+                        <select class="browser-default countries" name="pais_registro"  id="countryId">                    
+                        <option>Country</option> 
+                          </select>
+                        
+                    </div>
+                </div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                <script src="http://lab.iamrohit.in/js/location.js"></script>
+                <div class="row">
+                    
+                    <div class="input-field col s6">                  
+
+                      <input id="edad_registro" type="number" name="edad_registro" class="validate">
+                      <label for="edad_registro">Edad</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="contraseña" name="contraseña" type="password" class="validate" type="password">
+
+                      <label for="contraseña">Contraseña</label>
+                    </div>
+                </div>
+                    <div class="center-align">
+                        <button class="btn red white-text waves-effect waves-light" type="submit" name="registrarme"> Registrarme
+                            <i class="material-icons">send</i>
+                        </button>
+                    </div> 
+                      </form>
+                  <div class="row">
+                    <div class="col s6">
+                        <form action="#">
+                            <p>
+                              ¿Ya tienes una cuenta inicia sesión <a class="modal-trigger modal-action modal-close waves-effect waves-green btn-flat right-align" href="#modal1">aquí</a>
+                            </p>
+                        </form>
+                    </div>
+                  </div>
+                    
+              
+              </div>
+          </div>
+        </div>
+      </div>        
+    </div>
+  </div>
 
         <!--Hero-->
         <div class="section no-pad-bot" id="index-banner">

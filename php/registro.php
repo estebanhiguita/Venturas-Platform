@@ -1,6 +1,5 @@
 <?php
-//include('login.php');
-session_start();
+include("login.php");
 $servername = "localhost";
 $username = "ana";
 $password = "ana";
