@@ -4,8 +4,8 @@ include ("php/registro.php");
 if(isset($_GET['action']) && $_GET['action'] == 'callfunction'){
     //call function here
     session_destroy();
-        unset($_SESSION["usario"]);
-		header("Location:index.php");
+    unset($_SESSION["usario"]);
+    header("Location:index.php");
 }
 ?>
 <html>
@@ -15,10 +15,10 @@ if(isset($_GET['action']) && $_GET['action'] == 'callfunction'){
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
         <meta name="theme-color" content="#2196F3">
         <title>Venturas para emprendedores</title>
-        
+
 
         <!-- CSS  -->
-<!--        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">-->
+        <!--        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">-->
         <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
         <link href="css/materialize.css" type="text/css" rel="stylesheet">
         <link href="css/style.css" type="text/css" rel="stylesheet" >
@@ -38,32 +38,32 @@ if(isset($_GET['action']) && $_GET['action'] == 'callfunction'){
 
 
         <!--Navigation-->
-<!--
-        <nav>
-            <div class="container">
-                <div class="nav-wrapper">
-                    <a href="#top" class="brand-logo">
-                        <img style="width:50px;margin-left: 50px;" src="img/logo-venturas.gif">
-                    </a>
-                </div>
-            </div>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#!">First Sidebar Link</a></li>
-                <li><a href="#!">Second Sidebar Link</a></li>
-            </ul>
-            <ul id="slide-out" class="side-nav">
-                <li><a href="#!">First Sidebar Link</a></li>
-                <li><a href="#!">Second Sidebar Link</a></li>
-            </ul>
-            <a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-        </nav>
+        <!--
+<nav>
+<div class="container">
+<div class="nav-wrapper">
+<a href="#top" class="brand-logo">
+<img style="width:50px;margin-left: 50px;" src="img/logo-venturas.gif">
+</a>
+</div>
+</div>
+<ul class="right hide-on-med-and-down">
+<li><a href="#!">First Sidebar Link</a></li>
+<li><a href="#!">Second Sidebar Link</a></li>
+</ul>
+<ul id="slide-out" class="side-nav">
+<li><a href="#!">First Sidebar Link</a></li>
+<li><a href="#!">Second Sidebar Link</a></li>
+</ul>
+<a href="#" data-activates="slide-out" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+</nav>
 -->
 
         <div class="navbar-fixed">
             <nav id="nav_f" class="default_color" role="navigation">
                 <div class="container">
                     <div class="nav-wrapper"><a id="logo-container" href="#top" class="brand-logo">
-                        <img style="width:50px;" src="img/logo-venturas.gif">
+                        <img style="width:50px;" src="img/LOGO/V-azulCl.svg">
                         </a>
                         <ul id="nav-mobile" class="right side-nav">
                             <li><a href="#work">Noticias</a></li>
@@ -77,146 +77,146 @@ if(isset($_GET['action']) && $_GET['action'] == 'callfunction'){
             </nav>
         </div>
 
-<!-- Modal Login -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-    <div class="right-align">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat right-align">X</a>
-    </div>
-      <p>!Estás a un paso de empezar a crear tu modelo de negocio de una manera divertida!</p>
-        <div class="row">
-        <div class="col s12 m8 offset-m2 l6 offset-l3">
-          <div class="card vRed neutral-1">
-            <div class="card-content white-text">
-              <span class="card-title">Member Login</span>
+        <!-- Modal Login -->
+        <div id="modal1" class="modal white">
+            <div class="modal-content">
+                <div class="right-align">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat right-align">X</a>
+                </div>
+                <p>!Estás a un paso de empezar a crear tu modelo de negocio de una manera divertida!</p>
+                <div class="row">
+                    <div class="col s12 m8 offset-m2 l6 offset-l3">
+                        <div class="card vRed neutral-1">
+                            <div class="card-content white-text">
+                                <span class="card-title">Member Login</span>
+                            </div>
+                            <div class="row">
+                                <form class="col s12" action="index.php" method="post">
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <i class="material-icons prefix">account_circle</i>
+                                            <input id="icon_prefix" type="text" class="validate" name="user">
+                                            <label for="icon_prefix">User</label>
+                                        </div>
+                                        <div class="input-field col s12">
+                                            <i class="material-icons prefix">lock_outline </i>
+                                            <input id="password" type="password" class="validate" name="pass">
+                                            <label for="password">Password</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <!--
+<div class="col s6">
+<form action="#">
+<p>
+<input type="checkbox" id="remember" />
+<label for="remember">Recordarme</label>
+</p>
+</form>
+</div>
+-->
+                                        <div class="col s6">
+                                            <a href="#">Olvidé mi contraseña</a>
+                                        </div>
+                                    </div>
+                                    <div class="center-align">
+                                        <button class="btn red white-text waves-effect waves-light" type="submit" name="login" method="post" action="index.php">Login
+                                            <i class="material-icons">send</i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>        
+                <!--
+<div>
+<button class="btn light-blue darken-4 white-text waves-effect waves-light" href="#">Login with facebook</button>
+<button class="btn blue white-text waves-effect waves-light"  href="#">Login with google</button>
+</div>
+-->
             </div>
-            <div class="row">
-                <form class="col s12" action="index.php" method="post">
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">account_circle</i>
-                      <input id="icon_prefix" type="text" class="validate" name="user">
-                      <label for="icon_prefix">User</label>
-                    </div>
-                    <div class="input-field col s12">
-                      <i class="material-icons prefix">lock_outline </i>
-                      <input id="password" type="password" class="validate" name="pass">
-                      <label for="password">Password</label>
-                    </div>
-                  </div>
-                  <div class="row">
-<!--
-                    <div class="col s6">
-                        <form action="#">
-                            <p>
-                              <input type="checkbox" id="remember" />
-                              <label for="remember">Recordarme</label>
-                            </p>
-                        </form>
-                    </div>
--->
-                    <div class="col s6">
-                        <a href="#">Olvidé mi contraseña</a>
-                    </div>
-                  </div>
-                    <div class="center-align">
-                        <button class="btn red white-text waves-effect waves-light" type="submit" name="login" method="post" action="index.php">Login
-                            <i class="material-icons">send</i>
-                        </button>
-                    </div>
-                </form>
-              </div>
-          </div>
         </div>
-      </div>        
-<!--
-    <div>
-        <button class="btn light-blue darken-4 white-text waves-effect waves-light" href="#">Login with facebook</button>
-        <button class="btn blue white-text waves-effect waves-light"  href="#">Login with google</button>
-    </div>
--->
-    </div>
-  </div>
-    
-    <!-- Modal Registro -->
-  <div id="modal2" class="modal">
-    <div class="modal-content">
-    <div class="right-align">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat right-align">X</a>
-    </div>
-      <p>!Estás a un paso de crear tu modelo de negocio de una manera divertida!. Empieza con una cuenta gratuita.</p>
-<!--
-        <div>
-            <button class="btn light-blue darken-4 white-text waves-effect waves-light" href="#">Sing in with facebook</button>
-            <button class="btn blue white-text waves-effect waves-light"  href="#">Sing in with google</button>
-        </div>
--->
-        <div class="row">
-        <div class="col s12 m8 offset-m2 l6 offset-l3">
-          <div class="card vRed neutral-1">
-            <div class="row">
-                <form class="col s12" action="index.php" method="post">
-                  <div class="row">
-                    <div class="input-field col s6">
-                      <input id="nombre_registro" name="nombre_registro" type="text" class="validate">
-                      <label for="nombre_registro">Nombre</label>
-                    </div>
-                    <div class="input-field col s6">
-                      <input id="apellido_registro" name="apellido_registro" type="text" class="validate">
-                      <label for="apellido_registro">Apellido</label>
-                    </div>
-                  </div>
-                <div class="row">
-                    <div class="input-field col s6">
-                      <input id="correo_registro" name="correo_registro" type="text" class="validate">
-                      <label for="correo_registro">Correo</label>
-                    </div>
-                    <div class="input-field col s6">
-                        
-                        <select class="browser-default countries" name="pais_registro"  id="countryId">                    
-                        <option>Country</option> 
-                          </select>
-                        
-                    </div>
-                </div>
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-                <script src="http://lab.iamrohit.in/js/location.js"></script>
-                <div class="row">
-                    
-                    <div class="input-field col s6">                  
 
-                      <input id="edad_registro" type="number" name="edad_registro" class="validate">
-                      <label for="edad_registro">Edad</label>
-                    </div>
-                    <div class="input-field col s6">
-                      <input id="contraseña" name="contraseña" type="password" class="validate" type="password">
-
-                      <label for="contraseña">Contraseña</label>
-                    </div>
+        <!-- Modal Registro -->
+        <div id="modal2" class="modal white">
+            <div class="modal-content">
+                <div class="right-align">
+                    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat right-align">X</a>
                 </div>
-                    <div class="center-align">
-                        <button class="btn red white-text waves-effect waves-light" type="submit" name="registrarme"> Registrarme
-                            <i class="material-icons">send</i>
-                        </button>
-                    </div> 
-                      </form>
-                  <div class="row">
-                    <div class="col s6">
-                        <form action="#">
-                            <p>
-                              ¿Ya tienes una cuenta inicia sesión <a class="modal-trigger modal-action modal-close waves-effect waves-green btn-flat right-align" href="#modal1">aquí</a>
-                            </p>
-                        </form>
+                <p>!Estás a un paso de crear tu modelo de negocio de una manera divertida!. Empieza con una cuenta gratuita.</p>
+                <!--
+<div>
+<button class="btn light-blue darken-4 white-text waves-effect waves-light" href="#">Sing in with facebook</button>
+<button class="btn blue white-text waves-effect waves-light"  href="#">Sing in with google</button>
+</div>
+-->
+                <div class="row">
+                    <div class="col s12 m8 offset-m2 l6 offset-l3">
+                        <div class="card vRed neutral-1">
+                            <div class="row">
+                                <form class="col s12" action="index.php" method="post">
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <input id="nombre_registro" name="nombre_registro" type="text" class="validate">
+                                            <label for="nombre_registro">Nombre</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input id="apellido_registro" name="apellido_registro" type="text" class="validate">
+                                            <label for="apellido_registro">Apellido</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="input-field col s6">
+                                            <input id="correo_registro" name="correo_registro" type="text" class="validate">
+                                            <label for="correo_registro">Correo</label>
+                                        </div>
+                                        <div class="input-field col s6">
+
+                                            <select class="browser-default countries" name="pais_registro"  id="countryId">                    
+                                                <option>Country</option> 
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                                    <script src="http://lab.iamrohit.in/js/location.js"></script>
+                                    <div class="row">
+
+                                        <div class="input-field col s6">                  
+
+                                            <input id="edad_registro" type="number" name="edad_registro" class="validate">
+                                            <label for="edad_registro">Edad</label>
+                                        </div>
+                                        <div class="input-field col s6">
+                                            <input id="contraseña" name="contraseña" type="password" class="validate" type="password">
+
+                                            <label for="contraseña">Contraseña</label>
+                                        </div>
+                                    </div>
+                                    <div class="center-align">
+                                        <button class="btn red white-text waves-effect waves-light" type="submit" name="registrarme"> Registrarme
+                                            <i class="material-icons">send</i>
+                                        </button>
+                                    </div> 
+                                </form>
+                                <div class="row">
+                                    <div class="col s6">
+                                        <form action="#">
+                                            <p>
+                                                ¿Ya tienes una cuenta inicia sesión <a class="modal-trigger modal-action modal-close waves-effect waves-green btn-flat right-align" href="#modal1">aquí</a>
+                                            </p>
+                                        </form>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
                     </div>
-                  </div>
-                    
-              
-              </div>
-          </div>
+                </div>        
+            </div>
         </div>
-      </div>        
-    </div>
-  </div>
 
         <!--Hero-->
         <div class="section no-pad-bot" id="index-banner">
@@ -318,7 +318,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'callfunction'){
 
                     <div  class="col s12 m3 l3">
                         <div class="center promo promo-example">
-                            <i class="mdi-image-flash-on"></i>
+                            <img src="img/iconos-valiente.png" alt="valiente" class="responsive-img">
                             <h5 class="promo-caption">Ser emprendedor es cosa de valientes</h5>
                             <p class="light center"> Muchos sueñan hacerlo, pocos se lanzan a realizarlo. Es un sueño por el que se lucha día a día, y no es raro que ni tu familia ni tus amigos entiendan bien por lo que se pasa.
                             </p>
@@ -326,7 +326,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'callfunction'){
                     </div>
                     <div class="col s12 m3 l3">
                         <div class="center promo promo-example">
-                            <i class="mdi-social-group"></i>
+                            <img src="img/iconos-emprendedores.png" alt="valiente" class="responsive-img">
                             <h5 class="promo-caption">Plataforma para emprendedores</h5>
                             <p class="light center">Mejor aún: para el estilo de vida de los emprendedores. Un sitio para informarse, para proyectarse, conectar ideas y oportunidades, incluso otros emprendedores y de paso, para entretenerse un poco.
                             </p>
@@ -334,7 +334,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'callfunction'){
                     </div>
                     <div class="col s12 m3 l3">
                         <div class="center promo promo-example">
-                            <i class="mdi-hardware-desktop-windows"></i>
+                            <img src="img/iconos-datos.png" alt="valiente" class="responsive-img">
                             <h5 class="promo-caption">Más allá de los datos</h5>
                             <p class="light center">Acá encuentras, más allá de los datos, noticias y ayudas sectorizadas, -sin duda, de gran importancia para tu labor-, una ruta de empresarismo ciudadosamente diseñada para desarrollar tus ideas de negocios, con guías y herramientas que te apoyan y mientras avanzas en el proceso.
                             </p>
@@ -342,7 +342,7 @@ if(isset($_GET['action']) && $_GET['action'] == 'callfunction'){
                     </div>
                     <div class="col s12 m3 l3">
                         <div class="center promo promo-example">
-                            <i class="mdi-hardware-desktop-windows"></i>
+                            <img src="img/iconos-divertido.png" alt="valiente" class="responsive-img">
                             <h5 class="promo-caption">!Divertido!</h5>
                             <p class="light center">Paralelamente, podrás conocer las historias de personajes que viven experiencias propias de los emprendedores, allí muchas de las situaciones que has vivido estarán presentes, y otras que no, pero que tal vez te puedan resultar de utilidad, así sea para sonreír un rato.
                             </p>
@@ -358,9 +358,11 @@ if(isset($_GET['action']) && $_GET['action'] == 'callfunction'){
         </div>    
 
         <!--Parallax-->
+<!--
         <div class="parallax-container">
             <div class="parallax"><img src="img/parallax1.png"></div>
         </div>
+-->
 
         <!--Footer-->
         <footer id="contact" class="page-footer default_color scrollspy">
