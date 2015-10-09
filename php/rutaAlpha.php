@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "ana";
-$password = "ana";
-$dbname = "venturas";
+$servername = "mysql3.000webhost.com";
+$username = "a8914182_ventura";
+$password = "venturas123";
+$dbname = "a8914182_ventura";
 $usuario="";
 $contra="";
 $pregunta="";

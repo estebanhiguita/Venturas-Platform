@@ -44,8 +44,8 @@ if(empty($_SESSION["usuario"]))
         <div class="navbar-fixed">
             <nav id="nav_f" class="default_color" role="navigation">
                 <div class="container">
-                    <div class="nav-wrapper"><a id="logo-container" href="#top" class="brand-logo">
-                        <img style="width:50px;" src="img/logo-venturas.gif">
+                    <div class="nav-wrapper"><a id="logo-container" href="index.php" class="brand-logo">
+                        <img style="width:50px;" src="img/LOGO/V-azulCl.svg">
                         </a>
                         <ul id="nav-mobile" class="right side-nav">
                             <li><a href="index.php">Noticias</a></li>

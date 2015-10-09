@@ -1,9 +1,9 @@
 <?php
 session_start();
-$servername = "localhost";
-$username = "ana";
-$password = "ana";
-$dbname = "venturas";
+$servername = "mysql3.000webhost.com";
+$username = "a8914182_ventura";
+$password = "venturas123";
+$dbname = "a8914182_ventura";
 $usuario="";
 $contra="";
 $nombre="";
@@ -12,6 +12,11 @@ $correo="";
 $pais="";
 $edad="";
 $contraseña="";
+
+//$mysql_host = "mysql3.000webhost.com";
+//$mysql_database = "a8914182_ventura";
+//$mysql_user = "a8914182_ventura";
+//$mysql_password = "venturas123";
     
 
 
