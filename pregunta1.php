@@ -98,7 +98,7 @@ if(empty($_SESSION["usuario"]))
                     <div class="card-panel white hoverable">
 
                         <div class="row">
-                            <form action="pregunta1.php" method="post"  class="col s12">
+                            <form action="php/insert_pregunta.php" method="post"  class="col s12">
                                 <div class="row">
                                     <h3>
                                         <?php echo $pregunta;?>
@@ -114,11 +114,11 @@ if(empty($_SESSION["usuario"]))
 
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input id="icon_prefix" type="text" name="rta">
+                                        <input id="icon_prefix" type="text" name="rta1">
                                     </div>
                                 </div>
                                 <div class="center-align">
-                                    <button action="pregunta1.php#fase2" class="btn red white-text waves-effect waves-light" type="submit" name="pregunta">
+                                    <button action="pregunta1.php#fase2" class="btn red white-text waves-effect waves-light" type="submit" name="sub_preg_1">
                                         <i class="material-icons">save</i>Guardar
                                     </button>
                                 </div>
@@ -145,7 +145,7 @@ if(empty($_SESSION["usuario"]))
                                     </div>
                                 </div>
                                 <div class="center-align">
-                                    <button class="btn red white-text waves-effect waves-light" type="submit" name="pregunta/2">
+                                    <button class="btn red white-text waves-effect waves-light" type="submit" name="sub_preg_2">
                                         <i class="material-icons">save</i>Guardar
                                     </button>
                                 </div>

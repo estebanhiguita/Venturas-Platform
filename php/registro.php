@@ -1,9 +1,13 @@
 <?php
 include("login.php");
-$servername = "mysql3.000webhost.com";
-$username = "a8914182_ventura";
-$password = "venturas123";
-$dbname = "a8914182_ventura";
+//$servername = "mysql3.000webhost.com";
+//$username = "a8914182_ventura";
+//$password = "venturas123";
+//$dbname = "a8914182_ventura";
+$servername = "localhost";
+$username = "ana";
+$password = "ana";
+$dbname = "venturas";
 $usuario="";
 $contra="";
 $nombre="";

@@ -1,5 +1,5 @@
 <?php
-session_start();
+include("registro.php");
 //$servername = "mysql3.000webhost.com";
 //$username = "a8914182_ventura";
 //$password = "venturas123";
@@ -22,36 +22,32 @@ $contraseña="";
 //$mysql_user = "a8914182_ventura";
 //$mysql_password = "venturas123";
     
+//estas
 
-
-if(isset($_POST["login"])){
+if(isset($_POST["sub_preg_1"])){
     $mysqli =new mysqli($servername, $username, $password, $dbname);
 if ($mysqli->connect_errno) {
     echo $mysqli->connect_errno;
 }
     $mysqli->set_charset("utf8");
-    
-$usuario=$_POST["user"];
-$contra=$_POST["pass"];
+//aqui van los nombres de los campos que vamos a traer   
+$respuesta=$_POST["rta1"];
+$usuario= $_SESSION["usuario"];
+$select= "INSERT INTO repuestas(descripcion, usuario_id, preg_id) values ('".$respuesta."','".$usuario."',1)  ;";
 
-$select= "SELECT * FROM login where email = '".$usuario."' and contrasena = '".$contra."' ;";
-$result = mysqli_query($mysqli, $select); 
-$numrows=mysqli_num_rows( $result );
+//$numrows=mysqli_num_rows( $result );
 
-if ($row = mysqli_fetch_array($result) ){
+if ($result = mysqli_query($mysqli, $select) ){
 
-   do {
-       if($numrows>0){
-           $_SESSION["usuario"]=$usuario;
-       echo  "<script> alert('Usuario y contraseña correctos'); </script> ";
-       header('Location:pregunta1.php'); 
+   
+       echo  "<script> alert('Se ha guardado correctamente'); </script> ";
+       header('Location:../pregunta1.php'); 
        
-       }
+       
      
-   } while ($row = mysqli_fetch_array($result)); 
+   } else {
+echo  "<script> alert('No se pudo ingresar'); </script> ";
+}
+}
 
-} else {
-echo  "<script> alert('Usuario y contraseña incorrectos'); </script> ";
-}
-}
 ?>
