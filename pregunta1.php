@@ -22,6 +22,11 @@ if(empty($_SESSION["usuario"]))
         <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" >
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <script src="js/modernizr.js"></script> <!-- Modernizr -->
+        <script>
+ function pasarfase1(){
+ document.getElementById('fase1');
+ }
+</script>
     </head>
     <body>
         <!-- Pre Loader -->
@@ -58,7 +63,7 @@ if(empty($_SESSION["usuario"]))
         </div>
         <!-- Preguntas-->
         <div class="row">
-            <div class="col s12">
+            <div class="col s12" id="navfases">
                 <ul class="tabs">
                     <li class="tab col s3"><a class="active" href="#fase0">Fase 0</a></li>
                     <li class="tab col s3"><a href="#fase1">Fase 1</a></li>
@@ -70,25 +75,26 @@ if(empty($_SESSION["usuario"]))
                 <div class="col s6 offset-s3">
                     <div class="card-panel white hoverable">
                         <div class="row">
+                           
                             <h3>Fase 0</h3>
                             <p>El desarrollo de una idea de negocio, bien sea sobre un producto o servicio, requiere la identificación previa de un problema, una oportunidad o una necesidad. Si no tienes claro lo anterior, es recomendable que te devuelvas en el proceso y pienses cuidadosamente qué estarías logrando con tu producto: <b>¿resolver algún problema? ¿Aprovechar una oportunidad? ¿Satisfacer una necesidad? </b></p>
                             <p>Recuerda que las oportunidades están estrechamente relacionadas con las tecnologías emergentes y el potencial de país, entre otros, mientras que los problemas y las necesidades tienen que ver con aquellos productos o servicios que logran aliviar algún dolor (entendiendo esto como algo que resulta molesto o que podría ser objeto de mejora y por lo que la gente pagaría para sentirse mejor) en tus clientes.</p>
                             <h6>¿Ya lo tienes claro? Indica qué fue lo que identificaste.
                             </h6>
-                            <form action="#">
+                            <form action="php/insert_pregunta.php" method="post"  class="col s12">
                                 <p>
-                                    <input class="with-gap" name="group1" type="radio" id="test1" />
+                                    <input class="with-gap"  type="radio"  name="fase0" id="test1" value="problema" />
                                     <label for="test1">Problema</label>
                                 </p>
                                 <p>
-                                    <input class="with-gap" name="group1" type="radio" id="test2" />
+                                    <input class="with-gap"  type="radio"  name="fase0" id="test2" value="oportunidad"  />
                                     <label for="test2">Oportunidad</label>
                                 </p>
                                 <p>
-                                    <input class="with-gap" name="group1" type="radio" id="test3"  />
+                                    <input class="with-gap"  type="radio"   name="fase0" id="test3" value="necesidad"  />
                                     <label for="test3">Necesidad</label>
                                 </p>
-                            </form>
+                            
                         </div>
                     </div>
                 </div>
@@ -98,7 +104,7 @@ if(empty($_SESSION["usuario"]))
                     <div class="card-panel white hoverable">
 
                         <div class="row">
-                            <form action="php/insert_pregunta.php" method="post"  class="col s12">
+                            
                                 <div class="row">
                                     <h3>
                                         <?php echo $pregunta;?>
@@ -111,7 +117,7 @@ if(empty($_SESSION["usuario"]))
                                         Describe en una frase qué es lo que te hace diferente de tus competidores. Cuál es esa ventaja que te pone por encima de ellos y que tus clientes van a agradecer.
                                         </b></p>
                                 </div>
-
+                                
                                 <div class="row">
                                     <div class="input-field col s12">
                                         <input id="icon_prefix" type="text" name="rta1">
@@ -132,7 +138,7 @@ if(empty($_SESSION["usuario"]))
                 <div class="col s6 offset-s3">
                     <div class="card-panel white hoverable">
                         <div class="row">
-                            <form class="col s12">
+                            <form action="php/insert_pregunta.php" method="post" class="col s12">
                                 <div class="row">
                                     <h3>
                                         <?php echo $pregunta2;?>
@@ -268,5 +274,6 @@ if(empty($_SESSION["usuario"]))
         accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
     });
 </script>
+
 </body>
 </html>
