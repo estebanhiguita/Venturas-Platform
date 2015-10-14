@@ -228,10 +228,10 @@ header('Content-Type: text/html; charset=UTF-8');
                 <h1 class="text_h center header cd-headline letters type">
                     <span>Soy</span> 
                     <span class="cd-words-wrapper waiting">
-                        <b class="is-visible">constructor de mis propios sueños
+                        <b class="is-visible">constructor de sueños
                         </b>
                         <b>dedicado e innovador</b>
-                        <b>emprendedor, cada día es una nueva aventura</b>
+                        <b>emprendedor</b>
                         <b>aventurero, estoy en Venturas</b>
                     </span>
                 </h1>

@@ -2,6 +2,25 @@
 <?php
 include ("php/registro.php");
 include ("php/rutaAlpha.php");
+//include ("php/insert_pregunta.php");
+$respuesta1="";
+$respuesta2="";
+$mysqli =new mysqli($servername, $username, $password, $dbname);
+if ($mysqli->connect_errno) {
+    echo $mysqli->connect_errno;
+}
+$mysqli->set_charset("utf8");
+$usuario= $_SESSION["usuario"];
+
+$select= "SELECT descripcion FROM repuestas where preg_id = 1 and usuario_id = '".$usuario."';";
+$result = mysqli_query($mysqli, $select);
+$row = mysqli_fetch_array($result); 
+$respuesta1 = $row["descripcion"];
+
+$select= "SELECT descripcion FROM repuestas where preg_id = 2 and usuario_id = '".$usuario."';";
+$result = mysqli_query($mysqli, $select);
+$row = mysqli_fetch_array($result); 
+$respuesta2 = $row["descripcion"];
 if(empty($_SESSION["usuario"]))
 {
 
@@ -147,7 +166,7 @@ if(empty($_SESSION["usuario"]))
                                 </div>
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input id="icon_prefix" type="text" class="materialize-textarea" name="rta2">
+                                        <input id="icon_prefix" type="text" class="materialize-textarea" name="rta2" value='<?php echo $respuesta2; ?>'>
                                     </div>
                                 </div>
                                 <div class="center-align">
