@@ -139,11 +139,11 @@ if(empty($_SESSION["usuario"]))
                                 
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input id="icon_prefix" type="text" name="rta1">
+                                        <input id="icon_prefix" type="text"  value='<?php echo $respuesta1; ?>' name="rta1">
                                     </div>
                                 </div>
                                 <div class="center-align">
-                                    <button action="pregunta1.php#fase2" class="btn red white-text waves-effect waves-light" type="submit" name="sub_preg_1">
+                                    <button action="pregunta1.php#fase2" class="btn red white-text waves-effect waves-light"  type="submit" name="sub_preg_1">
                                         <i class="material-icons">save</i>Guardar
                                     </button>
                                 </div>

@@ -41,7 +41,7 @@ $row = mysqli_fetch_array($result);
 $respuesta2 = $row["descripcion"];
 
 if(isset($_POST["sub_preg_1"])){
-
+    $usuario= $_SESSION["usuario"];
     $selectrta= "SELECT preg_id FROM repuestas WHERE usuario_id='".$usuario."';";
     $resultrta = mysqli_query($mysqli, $selectrta); 
     $numrows=mysqli_num_rows( $resultrta );
@@ -51,12 +51,23 @@ if(isset($_POST["sub_preg_1"])){
     }
 
     if(in_array("1", $pregunta, TRUE)){
-        echo  "<script> alert('Ya has ingresado esta pregunta'); window.location.href='../pregunta1.php#fase1';</script> ";
-        //header('Location:../pregunta1.php'); 
-        return;
+        $usuario= $_SESSION["usuario"];
+       $respuesta1=$_POST["rta1"];
+        $select= "
+                UPDATE repuestas
+                SET descripcion = '".$respuesta1."'
+                WHERE usuario_id = '".$usuario."' AND preg_id=1;
+                ";
+         if ($result = mysqli_query($mysqli, $select) ){
+            echo  "<script> ('¡Has actualizado con exito! ');</script>";
+            echo "<script>window.location.href='../pregunta1.php#fase1'; </script> ";
+            //header('Location:../pregunta1.php'); 
+        } else {
+            echo  "<script> alert('No se pudo ingresar'); </script> ";
+        }
     }else
     {
-        $respuesta=$_POST["rta1"];
+        $respuesta1=$_POST["rta1"];
         $fase0= $_POST["fase0"];
         $select2= "INSERT INTO repuestas(descripcion, usuario_id, preg_id) values ('".$fase0."','".$usuario."',0)  ;";
         $select= "INSERT INTO repuestas(descripcion, usuario_id, preg_id) values ('".$respuesta."','".$usuario."',1)  ;";
@@ -83,7 +94,7 @@ if(isset($_POST["sub_preg_2"])){
         $respuesta2=$_POST["rta2"];
         $select= "
                 UPDATE repuestas
-                SET descripcion = '".$descripcion."'
+                SET descripcion = '".$respuesta2."'
                 WHERE usuario_id = '".$usuario."' AND preg_id=2;
                 ";
         if ($result = mysqli_query($mysqli, $select) ){
