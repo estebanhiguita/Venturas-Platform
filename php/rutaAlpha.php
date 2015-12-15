@@ -3,6 +3,11 @@
 //$username = "a8914182_ventura";
 //$password = "venturas123";
 //$dbname = "a8914182_ventura";
+/*$servername = "localhost";
+$servername = "mysql3.000webhost.com";
+$username = "a8914182_ventura";
+$password = "venturas123";
+$dbname = "a8914182_ventura";*/
 $servername = "localhost";
 $username = "ana";
 $password = "ana";
@@ -34,13 +39,20 @@ $row = mysqli_fetch_array($result);
 $pregunta = $row["titulo"];
 $descripcion = $row["descripcion"];
 
-//preg 1
+//preg 2
 $select= "SELECT * FROM preguntas where preg_id = 2;";
 $result = mysqli_query($mysqli, $select); 
 $numrows=mysqli_num_rows( $result );
 $row = mysqli_fetch_array($result); 
 $pregunta2 = $row["titulo"];
 $descripcion2 = $row["descripcion"];
+//preg 3
+$select= "SELECT * FROM preguntas where preg_id = 3;";
+$result = mysqli_query($mysqli, $select); 
+$numrows=mysqli_num_rows( $result );
+$row = mysqli_fetch_array($result); 
+$pregunta3 = $row["titulo"];
+$descripcion3 = $row["descripcion"];
 
 if(isset($_POST["pregunta"])){
     $rta=$_POST["rta"];

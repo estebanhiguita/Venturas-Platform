@@ -60,7 +60,7 @@ if(isset($_POST["sub_preg_1"])){
                 ";
          if ($result = mysqli_query($mysqli, $select) ){
             echo  "<script> ('¡Has actualizado con exito! ');</script>";
-            echo "<script>window.location.href='../pregunta1.php#fase1'; </script> ";
+            echo "<script>window.location.href='../fase1.php'; </script> ";
             //header('Location:../pregunta1.php'); 
         } else {
             echo  "<script> alert('No se pudo ingresar'); </script> ";
@@ -73,7 +73,7 @@ if(isset($_POST["sub_preg_1"])){
         $select= "INSERT INTO repuestas(descripcion, usuario_id, preg_id) values ('".$respuesta."','".$usuario."',1)  ;";
         if ($result = mysqli_query($mysqli, $select) ){
             $reult2=mysqli_query($mysqli, $select2);
-            echo  "<script> ('Se ha guardado correctamente'); window.location.href='../pregunta1.php#fase1';
+            echo  "<script> ('Se ha guardado correctamente'); window.location.href='../fase1.php';
                    </script> ";
             //header('Location:../pregunta1.php'); 
         } else {echo  "<script> alert('No se pudo ingresar'); </script> ";}
