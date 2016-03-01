@@ -36,10 +36,11 @@ if(empty($_SESSION["usuario"]))
         <title>Venturas platform</title>
 
         <!-- CSS  -->
-        <link href="css/materialize.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
         <link href="css/style.css" type="text/css" rel="stylesheet" >
         <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" >
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
         <script src="js/modernizr.js"></script> <!-- Modernizr -->
         <script>
             function pasarfase1(){
@@ -69,7 +70,7 @@ if(empty($_SESSION["usuario"]))
             <nav id="nav_f" class="default_color" role="navigation">
                 <div class="container">
                     <div class="nav-wrapper"><a id="logo-container" href="index.php" class="brand-logo">
-                        <img style="width:50px;" src="img/LOGO/V-azulCl.svg">
+                        <img style="width:50px;" src="img/Nuevo/logo.svg">
                         </a>
                         <ul id="nav-mobile" class="right side-nav">
                             <li><a href="index.php">Noticias</a></li>
@@ -82,30 +83,55 @@ if(empty($_SESSION["usuario"]))
         </div>
 
         <div class="container">
-            <h2 class="center-align">Ruta Modelo de negocio <b>VENTURAS</b></h2>
-            <h6>Generar tu modelo de negocio es un paso importante. Sin embargo, hay elementos clave que, más que llenar un formato, te permitirán reflexionar sobre tu iniciativa para mejorarla. ¿No entiendes mucho sobre modelos? ¡No te preocupes! Esta ruta te ofrecerá toda una serie de ayudas y ejemplos para que logres avanzar, y de paso hacerte preguntas que serán fundamentales en la evolución de tu idea de negocio.</h6>
-            <br>
-            <ul class="collection">
-                <li class="collection-item avatar">
-                    <a href="fase0.php">
-                        <img src="img/favicon.ico" alt="" class="circle">
-                        <span class="title">¿Oportunidad, problema o necesidad?</span>
-                    </a>
-                </li>
-                <li class="collection-item avatar">
-                    <img src="img/favicon.ico" alt="" class="circle">
-                    <span class="title">Clientes</span>
-                </li>
-                <li class="collection-item avatar">
-                    <img src="img/favicon.ico" alt="" class="circle">
-                    <span class="title">Mercado</span>
-                </li>
-                <li class="collection-item avatar">
-                    <img src="img/favicon.ico" alt="" class="circle">
-                    <span class="title">Propuesta de valor</span>
-                </li>
-            </ul>            
+            <div class="slider">
+                <ul class="slides">
+                    <li>
+                        <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
+                        <div class="caption left-align">
+                            <h3>Left Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
+                        <div class="caption right-align">
+                            <h3>Right Aligned Caption</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
+                        <div class="caption center-align">
+                            <h3>This is our big Tagline!</h3>
+                            <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="row">
+                <div class="col m8 offset-m2">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title black-text">Generar tu modelo de negocio es un paso importante.</span>
+                            <p>Sin embargo, hay elementos clave que, más que llenar un formato, te permitirán reflexionar sobre tu iniciativa para mejorarla.</p>
+                            <p>¿No entiendes mucho sobre modelos? <b>¡No te preocupes!</b> Esta ruta te ofrecerá toda una serie de ayudas y ejemplos para que logres avanzar, y de paso hacerte preguntas que serán fundamentales en la evolución de tu idea de negocio.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="fase0.php">Comenzar mi ruta</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
 
 
 
@@ -120,6 +146,9 @@ if(empty($_SESSION["usuario"]))
             $('.collapsible').collapsible({
                 accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
             });
+
+            $('.slider').slider({height: 150});
+
         </script>
 
     </body>

@@ -23,11 +23,11 @@ header('Content-Type: text/html; charset=UTF-8');
 
         <!-- CSS  -->
         <!--        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.min.css">-->
-        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-        <link href="css/materialize.css" type="text/css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
         <link href="css/style.css" type="text/css" rel="stylesheet" >
         <link href="css/font-awesome.min.css" type="text/css" rel="stylesheet" >
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
         <script src="js/modernizr.js"></script> <!-- Modernizr -->
     </head>
     <body id="top" class="scrollspy">
@@ -63,23 +63,30 @@ header('Content-Type: text/html; charset=UTF-8');
 </nav>
 -->
 
+
         <div class="navbar-fixed">
-            <nav id="nav_f" class="default_color" role="navigation">
-                <div class="container">
-                    <div class="nav-wrapper"><a id="logo-container" href="#top" class="brand-logo">
-                        <img style="width:50px;" src="img/LOGO/V-azulCl.svg">
-                        </a>
-                        <ul id="nav-mobile" class="right side-nav">
-                            <li><a href="#work">Noticias</a></li>
-                            <li><a href="#intro">¿Qué es Venturas?</a></li>
-                            <li><a href="#contact">Contacto</a></li>
-                            <li><a class="modal-trigger" href="#modal1">Login</a></li>
-                            <li><a class="modal-trigger" href="#modal2">Registrarse</a></li>
-                        </ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
-                    </div>
+            <nav  class="default_color">
+                <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo" style="padding-left:30px; padding-top:5px;"><img style="width:50%;" src="img/Nuevo/logo.svg"></a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#work">Noticias</a></li>
+                        <li><a href="#intro">¿Qué es Venturas?</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                        <li><a class="modal-trigger" href="#modal1">Login</a></li>
+                        <li><a class="modal-trigger" href="#modal2">Registrarse</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="#work">Noticias</a></li>
+                        <li><a href="#intro">¿Qué es Venturas?</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                        <li><a class="modal-trigger" href="#modal1">Login</a></li>
+                        <li><a class="modal-trigger" href="#modal2">Registrarse</a></li>
+                    </ul>
                 </div>
             </nav>
         </div>
+
 
         <!-- Modal Login -->
         <div id="modal1" class="modal white">
@@ -223,29 +230,62 @@ header('Content-Type: text/html; charset=UTF-8');
         </div>
 
         <!--Hero-->
-        <div class="section no-pad-bot" id="index-banner">
-            <div class="container">
-                <h1 class="text_h center header cd-headline letters type">
-                    <span>Soy</span> 
-                    <span class="cd-words-wrapper waiting">
-                        <b class="is-visible">constructor de sueños
-                        </b>
-                        <b>dedicado e innovador</b>
-                        <b>emprendedor</b>
-                        <b>aventurero, estoy en Venturas</b>
-                    </span>
-                </h1>
-            </div>
+        <!--
+<div class="section no-pad-bot" id="index-banner">
+<div class="container">
+<h1 class="text_h center header cd-headline letters type">
+<span>Soy</span> 
+<span class="cd-words-wrapper waiting">
+<b class="is-visible">constructor de sueños
+</b>
+<b>dedicado e innovador</b>
+<b>emprendedor</b>
+<b>aventurero, estoy en Venturas</b>
+</span>
+</h1>
+</div>
+</div>
+-->
+        <!--Slider-->
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="http://lorempixel.com/580/250/nature/1/"> <!-- random image -->
+                    <div class="caption center-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://lorempixel.com/580/250/nature/2/"> <!-- random image -->
+                    <div class="caption left-align">
+                        <h3>Left Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://lorempixel.com/580/250/nature/3/"> <!-- random image -->
+                    <div class="caption right-align">
+                        <h3>Right Aligned Caption</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+                <li>
+                    <img src="http://lorempixel.com/580/250/nature/4/"> <!-- random image -->
+                    <div class="caption center-align">
+                        <h3>This is our big Tagline!</h3>
+                        <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                    </div>
+                </li>
+            </ul>
         </div>
 
         <!--News-->
         <div class="section scrollspy" id="work">
             <div class="container">
-                <!--        <h2 class="header text_b">Noticias</h2>-->
-                <h5>Actualidad para emprendedores</h5>
                 <div class="row">
-                    <div class="col s12 m6 l6">
-                        <div class="card">
+                    <div class="col s6 m4 l4">
+                        <div class="card same">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="img/noticias/Noticia1.jpg">
                             </div>
@@ -259,8 +299,8 @@ header('Content-Type: text/html; charset=UTF-8');
                             </div>
                         </div>
                     </div>
-                    <div class="col s12 m6 l6">
-                        <div class="card">
+                    <div class="col s6 m4 l4">
+                        <div class="card same">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="img/noticias/Noticia2.jpg">
                             </div>
@@ -275,13 +315,13 @@ header('Content-Type: text/html; charset=UTF-8');
                             </div>
                         </div>
                     </div>
-                    <div class="col s12 m6 l6">
-                        <div class="card">
+                    <div class="col s6 m4 l4">
+                        <div class="card same">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="img/noticias/Noticia3.jpg">
                             </div>
                             <div class="card-content">
-                                <span class="card-title activator grey-text text-darken-4">10 herramientas digitales que todo emprendedor debe conocer<i class="mdi-navigation-more-vert right"></i></span>
+                                <span class="card-title activator grey-text text-darken-4">10 herramientas digitales a conocer<i class="mdi-navigation-more-vert right"></i></span>
                                 <p><a href="http://www.mdeinteligente.co/estrategia/herramientas-digitales-para-emprendedores-emprendimiento-medellin/">Ver más</a></p>
                             </div>
                             <div class="card-reveal">
@@ -291,8 +331,97 @@ header('Content-Type: text/html; charset=UTF-8');
                             </div>
                         </div>
                     </div>
-                    <div class="col s12 m6 l6">
-                        <div class="card">
+                    <div class="col s6 m4 l4">
+                        <div class="card same">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/noticias/Noticia4.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Cuándo es momento de dejar tu trabajo<i class="mdi-navigation-more-vert right"></i></span>
+                                <p><a href="http://www.soyentrepreneur.com/29101-cuando-es-momento-de-dejar-tu-trabajo.html
+                                    ">Ver más</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Cuándo es momento de dejar tu trabajo<i class="mdi-navigation-close right"></i></span>
+                                <p>Casi todos tenemos alguna forma de espíritu emprendedor y con ello, el potencial de manejar un negocio propio. Pero este estilo de vida no es para todos. Muchas personas deciden poner sus talentos a trabajar para la compañía de alguien más, haciendo transformaciones desde adentro, siendo intrapreneurs. Para otros, laborar en una compañía más no es una opción, por lo que deciden abrir sus propios negocios.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col s6 m4 l4">
+                        <div class="card same">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/noticias/Noticia4.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Cuándo es momento de dejar tu trabajo<i class="mdi-navigation-more-vert right"></i></span>
+                                <p><a href="http://www.soyentrepreneur.com/29101-cuando-es-momento-de-dejar-tu-trabajo.html
+                                    ">Ver más</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Cuándo es momento de dejar tu trabajo<i class="mdi-navigation-close right"></i></span>
+                                <p>Casi todos tenemos alguna forma de espíritu emprendedor y con ello, el potencial de manejar un negocio propio. Pero este estilo de vida no es para todos. Muchas personas deciden poner sus talentos a trabajar para la compañía de alguien más, haciendo transformaciones desde adentro, siendo intrapreneurs. Para otros, laborar en una compañía más no es una opción, por lo que deciden abrir sus propios negocios.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col s6 m4 l4">
+                        <div class="card same">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/noticias/Noticia4.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Cuándo es momento de dejar tu trabajo<i class="mdi-navigation-more-vert right"></i></span>
+                                <p><a href="http://www.soyentrepreneur.com/29101-cuando-es-momento-de-dejar-tu-trabajo.html
+                                    ">Ver más</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Cuándo es momento de dejar tu trabajo<i class="mdi-navigation-close right"></i></span>
+                                <p>Casi todos tenemos alguna forma de espíritu emprendedor y con ello, el potencial de manejar un negocio propio. Pero este estilo de vida no es para todos. Muchas personas deciden poner sus talentos a trabajar para la compañía de alguien más, haciendo transformaciones desde adentro, siendo intrapreneurs. Para otros, laborar en una compañía más no es una opción, por lo que deciden abrir sus propios negocios.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col s6 m4 l4">
+                        <div class="card same">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/noticias/Noticia4.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Cuándo es momento de dejar tu trabajo<i class="mdi-navigation-more-vert right"></i></span>
+                                <p><a href="http://www.soyentrepreneur.com/29101-cuando-es-momento-de-dejar-tu-trabajo.html
+                                    ">Ver más</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Cuándo es momento de dejar tu trabajo<i class="mdi-navigation-close right"></i></span>
+                                <p>Casi todos tenemos alguna forma de espíritu emprendedor y con ello, el potencial de manejar un negocio propio. Pero este estilo de vida no es para todos. Muchas personas deciden poner sus talentos a trabajar para la compañía de alguien más, haciendo transformaciones desde adentro, siendo intrapreneurs. Para otros, laborar en una compañía más no es una opción, por lo que deciden abrir sus propios negocios.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col s6 m4 l4">
+                        <div class="card same">
+                            <div class="card-image waves-effect waves-block waves-light">
+                                <img class="activator" src="img/noticias/Noticia4.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Cuándo es momento de dejar tu trabajo<i class="mdi-navigation-more-vert right"></i></span>
+                                <p><a href="http://www.soyentrepreneur.com/29101-cuando-es-momento-de-dejar-tu-trabajo.html
+                                    ">Ver más</a></p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Cuándo es momento de dejar tu trabajo<i class="mdi-navigation-close right"></i></span>
+                                <p>Casi todos tenemos alguna forma de espíritu emprendedor y con ello, el potencial de manejar un negocio propio. Pero este estilo de vida no es para todos. Muchas personas deciden poner sus talentos a trabajar para la compañía de alguien más, haciendo transformaciones desde adentro, siendo intrapreneurs. Para otros, laborar en una compañía más no es una opción, por lo que deciden abrir sus propios negocios.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s6 m4 l4">
+                        <div class="card same">
                             <div class="card-image waves-effect waves-block waves-light">
                                 <img class="activator" src="img/noticias/Noticia4.jpg">
                             </div>
@@ -316,9 +445,6 @@ header('Content-Type: text/html; charset=UTF-8');
         <div id="intro" class="section scrollspy">
             <div class="container">
                 <div class="row">
-                    <div  class="col s12">
-                        <h2 class="center header text_h2">Venturas es la plataforma para  <span class="span_h2"> emprendedores  </span>que te entiende y te <span class="span_h2">empodera</span> para construir tus proyectos. Tenemos una Ruta especializada para que desarrolles con claridad tus <span class="span_h2"> ideas de negocios.</span> </h2>
-                    </div>
 
                     <div  class="col s12 m3 l3">
                         <div class="center promo promo-example">
@@ -352,6 +478,10 @@ header('Content-Type: text/html; charset=UTF-8');
                             </p>
                         </div>
                     </div>
+                    
+                    <div  class="col s12">
+                        <h2 class="center header text_h2">Venturas es la plataforma para  <span class="span_h2"> emprendedores  </span>que te entiende y te <span class="span_h2">empodera</span> para construir tus proyectos. Tenemos una Ruta especializada para que desarrolles con claridad tus <span class="span_h2"> ideas de negocios.</span> </h2>
+                    </div>
 
                     <div  class="col s12">
                         <h4 class="center header text_h2">Si eres emprendedor, o estás a punto de comenzar, te invitamos a que conozcas Venturas y todo lo que tiene para tí.
@@ -362,10 +492,10 @@ header('Content-Type: text/html; charset=UTF-8');
         </div>    
 
         <!--Parallax-->
-<!--
-        <div class="parallax-container">
-            <div class="parallax"><img src="img/parallax1.png"></div>
-        </div>
+        <!--
+<div class="parallax-container">
+<div class="parallax"><img src="img/parallax1.png"></div>
+</div>
 -->
 
         <!--Footer-->
@@ -446,6 +576,7 @@ header('Content-Type: text/html; charset=UTF-8');
                 // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
                 $('.modal-trigger').leanModal();
                 $(".button-collapse").sideNav();
+                $('.slider').slider({full_width: true});
             });
         </script>
 

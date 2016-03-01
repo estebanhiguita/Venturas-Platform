@@ -30,6 +30,11 @@ if ($mysqli->connect_errno) {
 $mysqli->set_charset("utf8");
 $usuario= $_SESSION["usuario"];
 
+$select= "SELECT descripcion FROM repuestas where preg_id = 0 and usuario_id = '".$usuario."';";
+$result = mysqli_query($mysqli, $select);
+$row = mysqli_fetch_array($result); 
+$respuesta0 = $row["descripcion"];
+
 $select= "SELECT descripcion FROM repuestas where preg_id = 1 and usuario_id = '".$usuario."';";
 $result = mysqli_query($mysqli, $select);
 $row = mysqli_fetch_array($result); 

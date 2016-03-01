@@ -205,6 +205,33 @@ nav ul a {
     margin:-100px 0 0 -100px; /* is width and height divided by two */
 }
 
+.same{
+    min-height: 460px !important;
+    max-height: 380px !important;
+}
+
+.slider{
+    position: relative;
+    height: 220px;
+    width: 100%;
+}
+
+.slider .slides li img {
+    height: auto !important;
+}
+
+.footer-card{
+    background: url(../img/Nuevo/mapa-ruta.png) right bottom no-repeat;
+    height: 170px;
+}
+
+.footer-card img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+
 @media only screen and (max-width: 480px) {
     .text_h {
         padding: 4% 0;
@@ -219,7 +246,7 @@ input, textarea {
 }
 
 nav a.button-collapse {
-    left: -25px;
+    left: 10px;
 }
 
 .card-avatar .waves-effect {
@@ -242,7 +269,7 @@ nav a.button-collapse {
 }
 
 .card-avatar .card-content i {
-   font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .card-avatar .card-content .card-title {
@@ -267,29 +294,29 @@ footer.page-footer {
 
 /*colores form*/
 /* label color */
-   .input-field label {
-     color: #fff;
-   }
-   /* label focus color */
-   .input-field input[type=text]:focus + label {
-     color: #fff;
-   }
-   /* label underline focus color */
-   .input-field input[type=text]:focus {
-     border-bottom: 1px solid #fff;
-     box-shadow: 0 1px 0 0 #fff;
-   }
-   /* valid color */
-   .input-field input[type=text].valid {
-     border-bottom: 1px solid #fff;
-     box-shadow: 0 1px 0 0 #fff;
-   }
-   /* invalid color */
-   .input-field input[type=text].invalid {
-     border-bottom: 1px solid #fff;
-     box-shadow: 0 1px 0 0 #fff;
-   }
-   /* icon prefix focus color */
-   .input-field .prefix.active {
-     color: #fff;
-   }
+.input-field label {
+    color: #fff;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #fff;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 1px 0 0 #fff;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #fff;
+}
