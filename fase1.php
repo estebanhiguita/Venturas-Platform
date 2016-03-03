@@ -190,13 +190,20 @@ document.getElementById('fase1');
 
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input id="icon_prefix" type="text"  value='<?php echo $respuesta2; ?>' name="rta1">
+                                        <input id="icon_prefix" type="text"  value='<?php echo $respuesta2; ?>' name="rta2">
                                     </div>
                                 </div>
-                                <div class="center-align">
-                                    <button action="pregunta1.php#fase2" class="btn red white-text waves-effect waves-light"  type="submit" name="sub_preg_1">
-                                        <i class="material-icons">save</i>Guardar
-                                    </button>
+                                <div class="row">
+                                    <div class="col s6">
+                                        <div class="card-action">
+                                            <a id="irfase1" href="fase0.php">Anterior</a>
+                                        </div>
+                                    </div>
+                                    <div class="col s6 center-align">
+                                        <button action="fase2.php" class="btn red white-text waves-effect waves-light"  type="submit" name="sub_preg_2">
+                                            <i class="material-icons">save</i>Guardar
+                                        </button>
+                                    </div>
                                 </div>
                             </form>
                         </div>
