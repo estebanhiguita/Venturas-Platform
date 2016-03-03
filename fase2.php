@@ -3,7 +3,7 @@
 include ("php/registro.php");
 include ("php/rutaAlpha.php");
 //include ("php/insert_pregunta.php");
-$respuesta2="";
+$respuesta3="";
 $mysqli =new mysqli($servername, $username, $password, $dbname);
 if ($mysqli->connect_errno) {
     echo $mysqli->connect_errno;
@@ -11,10 +11,10 @@ if ($mysqli->connect_errno) {
 $mysqli->set_charset("utf8");
 $usuario= $_SESSION["usuario"];
 
-$select= "SELECT descripcion FROM repuestas where preg_id = 2 and usuario_id = '".$usuario."';";
+$select= "SELECT descripcion FROM repuestas where preg_id = 3 and usuario_id = '".$usuario."';";
 $result = mysqli_query($mysqli, $select);
 $row = mysqli_fetch_array($result); 
-$respuesta2 = $row["descripcion"];
+$respuesta3 = $row["descripcion"];
 if(empty($_SESSION["usuario"]))
 {
 
@@ -94,8 +94,8 @@ document.getElementById('fase1');
         </div>
         <!-- Preguntas-->
         <div class="row">
-            <div class="col s1 offset-s2"><img src="img/Nuevo/numero2.png" alt="" class="responsive-img"></div>
-            <div class="col s4"><h5 class="left-align">Clientes: Dolor</h5></div>
+            <div class="col s1 offset-s2"><img src="img/Nuevo/numero3.png" alt="" class="responsive-img"></div>
+            <div class="col s4"><h5 class="left-align">Clientes: Propuesta de valor</h5></div>
         </div>
         <div class="row">
             <div class="col s12">
@@ -109,8 +109,9 @@ document.getElementById('fase1');
                 <div class="col s6 m8 l8 offset-s3 offset-m2 offset-l2">
                     <div class="card-panel purple lighten-4 hoverable">
                         <div class="row">
-                            <h5>Ya resolviste si atenderás un problema, una oportunidad o una necesidad. 
-                                Ahora, incluso antes de pensar en la solución, es necesario que identifiques a los que podrán ser tus clientes, es decir, a quiénes llevarles tu producto o servicio. Conocerlos de manera detallada te permitirá establecer, de manera más acertada, tu propuesta de valor. Vamos a hacerlo de manera que puedas reconocer diferentes aspectos del cliente para comprenderlo mejor. Vamos por partes:</h5>
+                            <h5>
+                                Ya estableciste qué siente y piensa tu cliente con respecto a la problemática que identificaste.
+                            </h5>
                         </div>
                         <div class="row">
                             <div class="col s6">
@@ -134,8 +135,8 @@ document.getElementById('fase1');
                             </div>
                             <div class="row">
                                 <div class="col s3"><p>Oportunidad, problema, Solución</p></div>
+                                <div class="col s3 "><p>Dolor</p></div>
                                 <div class="col s3 "><p>Propuesta de Valor</p></div>
-                                <div class="col s3 "><p></p></div>
                             </div>
                         </div>
                     </div>
@@ -145,9 +146,7 @@ document.getElementById('fase1');
                 <div class="col s6 m8 l8 offset-s3 offset-m2 offset-l2">
                     <div class="card-panel purple lighten-4 hoverable">
                         <div class="row">
-                            <h5>¿Quiénes son los que se están viendo afectados por el problema? ¿Quiénes están manifestando la necesidad? ¿A quiénes les interesa la oportunidad que visualizaste? ¿Quiénes finalmente tienen ese “dolor” y estarían dispuestos a pagar para aliviarlo?</h5>
-
-                            <h5>Empecemos por ponernos en el lugar de tu cliente.</h5>
+                            <h5>Ahora debes investigar qué es lo que ellos ven actualmente en su entorno, enfocándote no sólo en la situación o necesidad que quieres resolver, sino en aquellos productos o servicios que ya existen para mitigar ese “dolor” de tu cliente, es decir, conocer la oferta del mercado.</h5>
                         </div>
                         <div class="row">
                             <div class="col s6">
@@ -166,13 +165,13 @@ document.getElementById('fase1');
                                 <div class="col s12">
                                     <br>
                                     <br>
-                                    <img src="img/Nuevo/pasos-ruta01.png" class="responsive-img">
+                                    <img src="img/Nuevo/pasos-ruta02.png" class="responsive-img">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col s3"><p>Oportunidad, problema, Solución</p></div>
+                                <div class="col s3 "><p>Dolor</p></div>
                                 <div class="col s3 "><p>Propuesta de Valor</p></div>
-                                <div class="col s3 "><p></p></div>
                             </div>
                         </div>
                     </div>
@@ -183,14 +182,14 @@ document.getElementById('fase1');
                     <div class="card-panel yellow lighten-1 hoverable">
                         <div class="row">
                             <h6>
-                                ¿Qué piensa y qué siente tu cliente con respecto a ese problema o necesidad?
+                                ¿Qué ve tu cliente en su entorno con respecto al problema o necesidad que identificaste y a lo que ya le ofrece el mercado?
 
                             </h6>
                             <form action="php/insert_pregunta.php" method="post" class="col s12">
 
                                 <div class="row">
                                     <div class="input-field col s12">
-                                        <input id="icon_prefix" type="text"  value='<?php echo $respuesta2; ?>' name="rta2">
+                                        <input id="icon_prefix" type="text"  value='<?php echo $respuesta3; ?>' name="rta3">
                                     </div>
                                 </div>
                                 <div class="row">
@@ -200,7 +199,7 @@ document.getElementById('fase1');
                                         </div>
                                     </div>
                                     <div class="col s6 center-align">
-                                        <button action="fase2.php" class="btn red white-text waves-effect waves-light"  type="submit" name="sub_preg_2">
+                                        <button action="fase3.php" class="btn red white-text waves-effect waves-light"  type="submit" name="sub_preg_3">
                                             <i class="material-icons">save</i>Guardar
                                         </button>
                                     </div>
@@ -217,8 +216,8 @@ document.getElementById('fase1');
                             </div>
                             <div class="row">
                                 <div class="col s3"><p>Oportunidad, problema, Solución</p></div>
+                                <div class="col s3 "><p>Dolor</p></div>
                                 <div class="col s3 "><p>Propuesta de Valor</p></div>
-                                <div class="col s3 "><p></p></div>
                             </div>
                         </div>
                     </div>
