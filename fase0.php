@@ -193,11 +193,11 @@ document.getElementById('fase1');
                                     <label for="test1">Problema</label>
                                 </p>
                                 <p>
-                                    <input class="with-gap"  type="radio"  name="fase0" id="test2" value="oportunidad"  />
+                                    <input  checked='<?php if( $respuesta0=='oportunidad'){ echo true;} ?>' class="with-gap"  type="radio"  name="fase0" id="test2" value="oportunidad"  />
                                     <label for="test2">Oportunidad</label>
                                 </p>
                                 <p>
-                                    <input class="with-gap"  type="radio"   name="fase0" id="test3" value="necesidad"  />
+                                    <input  checked='<?php if( $respuesta0=='necesidad'){ echo true;} ?>'  class="with-gap"  type="radio"   name="fase0" id="test3" value="necesidad"  />
                                     <label for="test3">Necesidad</label>
                                 </p>
                                 <br>
@@ -213,10 +213,10 @@ document.getElementById('fase1');
                                 <div class="row">
                                     <div class="col s6">
                                         <div class="card-action">
-                                            <a id="irfase0" href="fase0.php">Anterior</a>
+                                            <a id="irfase1" href="fase0.php">Anterior</a>
                                         </div>
                                     </div>
-                                    <div class="col s6">
+                                    <div class="col s6 center-align">
                                         <button action="fase1.php" class="btn red white-text waves-effect waves-light"  type="submit" name="sub_preg_1">
                                             <i class="material-icons">save</i>Guardar
                                         </button>
