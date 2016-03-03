@@ -156,12 +156,12 @@ document.getElementById('fase1');
                         <div class="row">
                             <div class="col s6">
                                 <div class="card-action">
-                                    <a href="fase0.php">Anterior</a>
+                                    <a id="irfase0" href="fase0.php">Anterior</a>
                                 </div>
                             </div>
                             <div class="col s6">
                                 <div class="card-action">
-                                    <a id="siguiente"><p class="right-align">Siguiente</p></a>
+                                    <a id="irfase2"><p class="right-align">Siguiente</p></a>
                                 </div>
                             </div>
                         </div>
@@ -210,24 +210,19 @@ document.getElementById('fase1');
                                         <input id="icon_prefix" type="text"  value='<?php echo $respuesta1; ?>' name="rta1" length="144">
                                     </div>
                                 </div>
-                                <div class="center-align">
-                                    <button action="fase1.php" class="btn red white-text waves-effect waves-light"  type="submit" name="sub_preg_1">
-                                        <i class="material-icons">save</i>Guardar
-                                    </button>
+                                <div class="row">
+                                    <div class="col s6">
+                                        <div class="card-action">
+                                            <a id="irfase0" href="fase0.php">Anterior</a>
+                                        </div>
+                                    </div>
+                                    <div class="col s6">
+                                        <button action="fase1.php" class="btn red white-text waves-effect waves-light"  type="submit" name="sub_preg_1">
+                                            <i class="material-icons">save</i>Guardar
+                                        </button>
+                                    </div>
                                 </div>
                             </form>
-                        </div>
-                        <div class="row">
-                            <div class="col s6">
-                                <div class="card-action">
-                                    <a href="fase0.php"></a>
-                                </div>
-                            </div>
-                            <div class="col s6">
-                                <div class="card-action">
-                                    <a id="siguiente"><p class="right-align">Siguiente</p></a>
-                                </div>
-                            </div>
                         </div>
                         <div class="footer-card">
                             <div class="row">
@@ -262,10 +257,17 @@ document.getElementById('fase1');
                 accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
             });
             $('.slider').slider({height: 150});
-            
+
             $("#irfase1").click(function(){
                 $('ul.tabs').tabs('select_tab', 'fase1');
             });
+            $("#irfase0").click(function(){
+                $('ul.tabs').tabs('select_tab', 'fase0');
+            });
+            $("#irfase2").click(function(){
+                $('ul.tabs').tabs('select_tab', 'fase2');
+            });
+
         </script>
 
     </body>
